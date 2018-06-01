@@ -8,20 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
-		9C5E8FD020C13C86004BFC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* ViewController.swift */; };
-		9C5E8FD320C13C86004BFC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* Main.storyboard */; };
+		9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* StartApp.swift */; };
+		9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */; };
 		9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD420C13C86004BFC63 /* Assets.xcassets */; };
 		9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD620C13C86004BFC63 /* LaunchScreen.storyboard */; };
+		9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FDF20C148B7004BFC63 /* CornerView.swift */; };
+		9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */; };
+		9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */; };
+		9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FEE20C15348004BFC63 /* History.storyboard */; };
+		9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */; };
+		9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF220C1542C004BFC63 /* BaseClass.swift */; };
+		9C5E8FF620C1549F004BFC63 /* LoadingXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */; };
+		9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */; };
+		9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF920C154EE004BFC63 /* Alert.swift */; };
+		9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FFC20C1553B004BFC63 /* UiApplication.swift */; };
+		9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FFE20C1556A004BFC63 /* Font.swift */; };
+		9C5E900120C1558B004BFC63 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E900020C1558B004BFC63 /* VC.swift */; };
+		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738D03E4C1DCF568B725E039 /* Pods-SavingMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.debug.xcconfig"; sourceTree = "<group>"; };
+		741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.release.xcconfig"; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C5E8FCF20C13C86004BFC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C5E8FD220C13C86004BFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C5E8FCF20C13C86004BFC63 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
+		9C5E8FD220C13C86004BFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartApp.storyboard; sourceTree = "<group>"; };
 		9C5E8FD420C13C86004BFC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5E8FD720C13C86004BFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C5E8FD920C13C86004BFC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5E8FDF20C148B7004BFC63 /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
+		9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerButton.swift; sourceTree = "<group>"; };
+		9C5E8FEE20C15348004BFC63 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		9C5E8FF220C1542C004BFC63 /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingXib.swift; sourceTree = "<group>"; };
+		9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		9C5E8FF920C154EE004BFC63 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		9C5E8FFC20C1553B004BFC63 /* UiApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiApplication.swift; sourceTree = "<group>"; };
+		9C5E8FFE20C1556A004BFC63 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		9C5E900020C1558B004BFC63 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46054F77C909674F96953564 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				738D03E4C1DCF568B725E039 /* Pods-SavingMoney.debug.xcconfig */,
+				741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C5E8FC120C13C86004BFC63 = {
 			isa = PBXGroup;
 			children = (
 				9C5E8FCC20C13C86004BFC63 /* SavingMoney */,
 				9C5E8FCB20C13C86004BFC63 /* Products */,
+				46054F77C909674F96953564 /* Pods */,
+				AF99E595345A636BB62706A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,114 @@
 		9C5E8FCC20C13C86004BFC63 /* SavingMoney */ = {
 			isa = PBXGroup;
 			children = (
+				9C5E8FFB20C15524004BFC63 /* Extension */,
+				9C5E8FF420C1548D004BFC63 /* Base */,
+				9C5E8FE620C151CD004BFC63 /* Screen */,
+				9C5E8FE520C151AB004BFC63 /* Style */,
 				9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */,
-				9C5E8FCF20C13C86004BFC63 /* ViewController.swift */,
-				9C5E8FD120C13C86004BFC63 /* Main.storyboard */,
 				9C5E8FD420C13C86004BFC63 /* Assets.xcassets */,
 				9C5E8FD620C13C86004BFC63 /* LaunchScreen.storyboard */,
 				9C5E8FD920C13C86004BFC63 /* Info.plist */,
+				9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */,
 			);
 			path = SavingMoney;
+			sourceTree = "<group>";
+		};
+		9C5E8FE520C151AB004BFC63 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */,
+				9C5E8FDF20C148B7004BFC63 /* CornerView.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		9C5E8FE620C151CD004BFC63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FEB20C15314004BFC63 /* History */,
+				9C5E8FE820C15274004BFC63 /* StartApp */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		9C5E8FE820C15274004BFC63 /* StartApp */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FE920C15289004BFC63 /* VC */,
+				9C5E8FEA20C152AD004BFC63 /* Router */,
+				9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */,
+			);
+			path = StartApp;
+			sourceTree = "<group>";
+		};
+		9C5E8FE920C15289004BFC63 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FCF20C13C86004BFC63 /* StartApp.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C5E8FEA20C152AD004BFC63 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9C5E8FEB20C15314004BFC63 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FED20C15328004BFC63 /* Router */,
+				9C5E8FEC20C15320004BFC63 /* VC */,
+				9C5E8FEE20C15348004BFC63 /* History.storyboard */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		9C5E8FEC20C15320004BFC63 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C5E8FED20C15328004BFC63 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9C5E8FF420C1548D004BFC63 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FF220C1542C004BFC63 /* BaseClass.swift */,
+				9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */,
+				9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */,
+				9C5E8FF920C154EE004BFC63 /* Alert.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9C5E8FFB20C15524004BFC63 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E8FFC20C1553B004BFC63 /* UiApplication.swift */,
+				9C5E8FFE20C1556A004BFC63 /* Font.swift */,
+				9C5E900020C1558B004BFC63 /* VC.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AF99E595345A636BB62706A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C5E8FDC20C13C86004BFC63 /* Build configuration list for PBXNativeTarget "SavingMoney" */;
 			buildPhases = (
+				DC0213D8A06962E2DAB94FCE /* [CP] Check Pods Manifest.lock */,
 				9C5E8FC620C13C86004BFC63 /* Sources */,
 				9C5E8FC720C13C86004BFC63 /* Frameworks */,
 				9C5E8FC820C13C86004BFC63 /* Resources */,
+				C7BF6BDC39A3493381B2E97A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,19 +266,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */,
+				9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */,
 				9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */,
-				9C5E8FD320C13C86004BFC63 /* Main.storyboard in Resources */,
+				9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */,
+				9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7BF6BDC39A3493381B2E97A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0213D8A06962E2DAB94FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SavingMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C5E8FC620C13C86004BFC63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5E8FD020C13C86004BFC63 /* ViewController.swift in Sources */,
+				9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */,
+				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
+				9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */,
+				9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */,
+				9C5E8FF620C1549F004BFC63 /* LoadingXib.swift in Sources */,
+				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
+				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
+				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
+				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
+				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
+				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
 				9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,12 +341,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C5E8FD120C13C86004BFC63 /* Main.storyboard */ = {
+		9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9C5E8FD220C13C86004BFC63 /* Base */,
 			);
-			name = Main.storyboard;
+			name = StartApp.storyboard;
 			sourceTree = "<group>";
 		};
 		9C5E8FD620C13C86004BFC63 /* LaunchScreen.storyboard */ = {
@@ -272,9 +469,11 @@
 		};
 		9C5E8FDD20C13C86004BFC63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738D03E4C1DCF568B725E039 /* Pods-SavingMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = SavingMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SavingMoney;
@@ -286,9 +485,11 @@
 		};
 		9C5E8FDE20C13C86004BFC63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D29GP635V;
 				INFOPLIST_FILE = SavingMoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.SavingMoney;

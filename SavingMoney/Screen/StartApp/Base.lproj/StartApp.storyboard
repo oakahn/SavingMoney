@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hdl-9G-Idf">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saving-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartApp" customModule="SavingMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CornerView" customModule="SavingMoney" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-If-nMu">
+                                <rect key="frame" x="14.5" y="13.5" width="291" height="541"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="250" width="242" height="41"/>
+                                        <color key="backgroundColor" red="0.99959987400000005" green="0.98866778609999995" blue="0.94900566340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="History 💾">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="psk-Jz-slF" firstAttribute="centerX" secondItem="eQz-If-nMu" secondAttribute="centerX" id="1P7-mb-cv7"/>
+                                    <constraint firstItem="psk-Jz-slF" firstAttribute="centerY" secondItem="eQz-If-nMu" secondAttribute="centerY" id="yZs-wY-eQi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                <rect key="frame" x="39" y="198" width="242" height="41"/>
+                                <color key="backgroundColor" red="0.9995998740196228" green="0.98866778612136841" blue="0.94900566339492798" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="รายรับ - รายจ่าย 💵">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eQz-If-nMu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.1" id="38H-wk-SYD"/>
+                            <constraint firstItem="isv-uS-PSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cao-bz-WpH"/>
+                            <constraint firstItem="isv-uS-PSd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:1.3" id="NQM-HZ-a5H"/>
+                            <constraint firstItem="isv-uS-PSd" firstAttribute="height" secondItem="eQz-If-nMu" secondAttribute="height" multiplier="1:13" id="VMj-PF-a25"/>
+                            <constraint firstItem="eQz-If-nMu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqq-HB-Hkt"/>
+                            <constraint firstItem="psk-Jz-slF" firstAttribute="width" secondItem="isv-uS-PSd" secondAttribute="width" id="hAl-48-eAV"/>
+                            <constraint firstItem="eQz-If-nMu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mL5-ZM-SVv"/>
+                            <constraint firstItem="eQz-If-nMu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1.05" id="upf-vF-EGH"/>
+                            <constraint firstItem="psk-Jz-slF" firstAttribute="height" secondItem="isv-uS-PSd" secondAttribute="height" id="xQ8-58-cQf"/>
+                            <constraint firstItem="isv-uS-PSd" firstAttribute="width" secondItem="eQz-If-nMu" secondAttribute="width" multiplier="1:1.2" id="zdO-hx-lyQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Saving" id="i9L-dU-PJY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cke-HG-FVS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="hdl-9G-Idf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JhO-L2-N4l">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bI7-d7-bd5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nby-jq-eVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-756" y="132"/>
+        </scene>
+    </scenes>
+</document>

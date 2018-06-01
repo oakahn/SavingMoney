@@ -14,6 +14,8 @@ protocol StartAppProtocol: BaseVCProtocol {
 
 class StartApp: BaseVC {
 
+    lazy var presenter = StartAppPresenter(self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -28,6 +30,9 @@ class StartApp: BaseVC {
         
     }
 
+    @IBAction func redirectToABC(_ sender: Any) {
+        
+    }
 }
 
 extension StartApp: StartAppProtocol {

@@ -18,12 +18,13 @@
 		9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FEE20C15348004BFC63 /* History.storyboard */; };
 		9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */; };
 		9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF220C1542C004BFC63 /* BaseClass.swift */; };
-		9C5E8FF620C1549F004BFC63 /* LoadingXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */; };
 		9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */; };
 		9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF920C154EE004BFC63 /* Alert.swift */; };
 		9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FFC20C1553B004BFC63 /* UiApplication.swift */; };
 		9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FFE20C1556A004BFC63 /* Font.swift */; };
 		9C5E900120C1558B004BFC63 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E900020C1558B004BFC63 /* VC.swift */; };
+		9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */; };
+		9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,12 +44,13 @@
 		9C5E8FEE20C15348004BFC63 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		9C5E8FF220C1542C004BFC63 /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
-		9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingXib.swift; sourceTree = "<group>"; };
 		9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
 		9C5E8FF920C154EE004BFC63 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		9C5E8FFC20C1553B004BFC63 /* UiApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiApplication.swift; sourceTree = "<group>"; };
 		9C5E8FFE20C1556A004BFC63 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		9C5E900020C1558B004BFC63 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingXibView.xib; sourceTree = "<group>"; };
+		9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingXibView.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -179,9 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				9C5E8FF220C1542C004BFC63 /* BaseClass.swift */,
-				9C5E8FF520C1549F004BFC63 /* LoadingXib.swift */,
 				9C5E8FF720C154C1004BFC63 /* BaseXibView.swift */,
 				9C5E8FF920C154EE004BFC63 /* Alert.swift */,
+				9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */,
+				9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */,
 				9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */,
 				9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */,
+				9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */,
 				9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */,
 				9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */,
 			);
@@ -327,10 +331,10 @@
 				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
 				9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */,
 				9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */,
-				9C5E8FF620C1549F004BFC63 /* LoadingXib.swift in Sources */,
 				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
+				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,

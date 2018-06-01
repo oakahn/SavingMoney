@@ -24,4 +24,3 @@ class BaseXibView: UIView {
         addSubview(view)
     }
 }
-

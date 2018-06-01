@@ -2,12 +2,12 @@ import UIKit
 import Foundation
 
 @IBDesignable class LoadingXibView: BaseXibView {
-    
-    @IBOutlet weak var acitivityIndicatorView: UIActivityIndicatorView!
-    @IBOutlet weak var activityDescriptionLabel: UILabel!
+
     private var parentView: UIView?
     
-    @IBOutlet weak var backdropImage: UIImageView!
+    @IBOutlet weak var acitivityIndicatorViews: UIActivityIndicatorView!
+    @IBOutlet weak var activityDescriptionLabels: UILabel!
+    @IBOutlet weak var backdropImages: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,22 +30,22 @@ import Foundation
     }
     
     func show(message: String,hasBg: Bool) {
-        self.backdropImage.isHidden = false
-        self.activityDescriptionLabel.text = message
+        self.backdropImages.isHidden = false
+        self.activityDescriptionLabels.text = message
         if hasBg {
-            self.activityDescriptionLabel.textColor = UIColor.white
-            self.acitivityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+            self.activityDescriptionLabels.textColor = UIColor.white
+            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
         } else {
-            self.backdropImage.isHidden = true
-            self.acitivityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-            self.activityDescriptionLabel.textColor = UIColor.lightGray
+            self.backdropImages.isHidden = true
+            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            self.activityDescriptionLabels.textColor = UIColor.lightGray
         }
         self.parentView?.addSubview(self)
-        self.acitivityIndicatorView?.startAnimating()
+        self.acitivityIndicatorViews?.startAnimating()
     }
     
     func hide() {
-        self.acitivityIndicatorView?.stopAnimating()
+        self.acitivityIndicatorViews?.stopAnimating()
         self.removeFromSuperview()
     }
     

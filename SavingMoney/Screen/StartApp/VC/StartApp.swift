@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol StartAppProtocol: BaseVCProtocol {
+    
+}
+
 class StartApp: BaseVC {
 
     override func viewDidLoad() {
@@ -26,3 +30,6 @@ class StartApp: BaseVC {
 
 }
 
+extension StartApp: StartAppProtocol {
+    
+}

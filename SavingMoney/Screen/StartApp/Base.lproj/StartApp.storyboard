@@ -14,7 +14,7 @@
         <!--Saving-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartApp" customModule="SavingMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartAppVC" id="BYZ-38-t0r" customClass="StartApp" customModule="SavingMoney" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CornerView" customModule="SavingMoney" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

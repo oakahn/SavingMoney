@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDB720C1756B00071802 /* StartAppPresenter.swift */; };
+		9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDB920C175DD00071802 /* BasePresenter.swift */; };
+		9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDBB20C176C900071802 /* ScreenError.swift */; };
+		9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDBD20C177D500071802 /* BaseRouter.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
 		9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* StartApp.swift */; };
 		9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */; };
@@ -31,6 +35,10 @@
 /* Begin PBXFileReference section */
 		738D03E4C1DCF568B725E039 /* Pods-SavingMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.release.xcconfig"; sourceTree = "<group>"; };
+		9C04BDB720C1756B00071802 /* StartAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppPresenter.swift; sourceTree = "<group>"; };
+		9C04BDB920C175DD00071802 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		9C04BDBB20C176C900071802 /* ScreenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenError.swift; sourceTree = "<group>"; };
+		9C04BDBD20C177D500071802 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E8FCF20C13C86004BFC63 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
@@ -73,6 +81,14 @@
 				741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C04BDB620C1755500071802 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C04BDB720C1756B00071802 /* StartAppPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9C5E8FC120C13C86004BFC63 = {
@@ -130,6 +146,7 @@
 		9C5E8FE820C15274004BFC63 /* StartApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C04BDB620C1755500071802 /* Presenter */,
 				9C5E8FE920C15289004BFC63 /* VC */,
 				9C5E8FEA20C152AD004BFC63 /* Router */,
 				9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */,
@@ -185,6 +202,9 @@
 				9C5E8FF920C154EE004BFC63 /* Alert.swift */,
 				9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */,
 				9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */,
+				9C04BDB920C175DD00071802 /* BasePresenter.swift */,
+				9C04BDBB20C176C900071802 /* ScreenError.swift */,
+				9C04BDBD20C177D500071802 /* BaseRouter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -287,13 +307,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -328,12 +356,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */,
+				9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */,
 				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
 				9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */,
 				9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */,
 				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
+				9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */,
+				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
+				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,

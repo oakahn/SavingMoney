@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol HistoryVCProtocol {
+protocol HistoryVCProtocol: BaseVCProtocol {
     
 }
 
-class HistoryVC: UIViewController {
+class HistoryVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,10 @@ class HistoryVC: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        isHideTitle = false
     }
 }
 

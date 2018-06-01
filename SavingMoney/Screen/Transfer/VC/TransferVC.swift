@@ -23,6 +23,10 @@ class TransferVC: BaseVC {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        isHideTitle = false
+    }
 }
 
 extension TransferVC: TransferProtocol {

@@ -18,8 +18,6 @@ class StartAppPresenter {
     init(_ view: StartAppProtocol) {
         self.view = view
     }
-    
-    
 }
 
 extension StartAppPresenter: StartAppPresenterProtocol {

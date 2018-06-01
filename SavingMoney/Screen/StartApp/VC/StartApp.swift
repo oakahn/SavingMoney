@@ -15,6 +15,7 @@ protocol StartAppProtocol: BaseVCProtocol {
 class StartApp: BaseVC {
 
     lazy var presenter = StartAppPresenter(self)
+    lazy var router = StartAppRouter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +24,22 @@ class StartApp: BaseVC {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        isHideTitle = true
+    }
+    
     func setup() {
         
     }
 
-    @IBAction func redirectToABC(_ sender: Any) {
-        
+    @IBAction func redirectToTransfer(_ sender: Any) {
+        router.redirectToTransferVC()
+    }
+    
+    @IBAction func redirectToHistory(_ sender: Any) {
+        router.redirectToHistoryVC()
     }
 }
 

@@ -13,6 +13,7 @@ protocol TransferPresenterProtocol {
 }
 
 class TransferPresenter {
+    
     var view: TransferProtocol?
     
     init(_ view: TransferVC) {

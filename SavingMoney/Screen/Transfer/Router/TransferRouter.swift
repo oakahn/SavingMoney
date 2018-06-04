@@ -15,7 +15,7 @@ protocol TransferRouterProtocol {
 
 class TransferRouter: BaseRouter, TransferRouterProtocol {
     func redirectToCreatetransaction(caseTransfer: String) {
-        guard let createTransaction = getViewController(storyboardName: self.appstart) as? CreateTransferVC else {
+        guard let createTransaction = getViewController(storyboardName: self.createTransfer) as? CreateTransferVC else {
             return
         }
         createTransaction.caseTransfer = caseTransfer

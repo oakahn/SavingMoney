@@ -18,6 +18,7 @@ class CreateTransferVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(caseTransfer ?? "")
     }
     
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,7 @@ class ListTransferCell: UITableViewCell {
     
     @IBOutlet weak var listImageTransfer: UIImageView!
     @IBOutlet weak var listTransfer: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

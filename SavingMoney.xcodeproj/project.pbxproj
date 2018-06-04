@@ -40,6 +40,7 @@
 		9C61E30C20C4E32C00908D95 /* DesignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */; };
 		9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */; };
 		9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31320C5224900908D95 /* CreateTransferVC.swift */; };
+		9C61E31620C549F400908D95 /* CreateTransfer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31520C549F400908D95 /* CreateTransfer.storyboard */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTableViewCell.swift; sourceTree = "<group>"; };
 		9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageTransferVC.swift; sourceTree = "<group>"; };
 		9C61E31320C5224900908D95 /* CreateTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferVC.swift; sourceTree = "<group>"; };
+		9C61E31520C549F400908D95 /* CreateTransfer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTransfer.storyboard; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -306,6 +308,7 @@
 				9C61E31220C5223600908D95 /* Router */,
 				9C61E31120C5223000908D95 /* Presenter */,
 				9C61E31020C5222B00908D95 /* VC */,
+				9C61E31520C549F400908D95 /* CreateTransfer.storyboard */,
 			);
 			path = CreateTransfer;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */,
 				9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */,
 				9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */,
+				9C61E31620C549F400908D95 /* CreateTransfer.storyboard in Resources */,
 				9C08F48620C1A1C4007E931B /* Transfer.storyboard in Resources */,
 				9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */,
 				9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */,

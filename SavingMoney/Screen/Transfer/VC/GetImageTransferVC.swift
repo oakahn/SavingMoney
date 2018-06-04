@@ -46,7 +46,7 @@ extension TransferVC {
         case 5:
             return "สุขภาพ"
         case 6:
-            return "internet"
+            return "ค่าอินเทอร์เน็ตหอ"
         default:
             return ""
         }

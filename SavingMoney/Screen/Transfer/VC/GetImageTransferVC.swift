@@ -30,5 +30,26 @@ extension TransferVC {
             return UIImage()
         }
     }
+    
+    func getName(name: Int) -> String {
+        switch name {
+        case 0:
+            return "ค่าอาหาร"
+        case 1:
+            return "การเดินทาง"
+        case 2:
+            return "ค่าโทรศัพท์มือถือ"
+        case 3:
+            return "ค่าไฟ"
+        case 4 :
+            return "ค่าน้ำ"
+        case 5:
+            return "สุขภาพ"
+        case 6:
+            return "internet"
+        default:
+            return ""
+        }
+    }
 }
 

@@ -16,14 +16,6 @@ class TransferVC: BaseVC {
     
     @IBOutlet weak var listTransferTableView: UITableView!
     lazy var presenter = TransferPresenter(self)
-    var listTransfer = ["อาหาร",
-                        "ค่าเดินทาง",
-                        "ค่าโทรศัพท์",
-                        "ค่าไฟ",
-                        "ค่าน้ำ",
-                        "สุขภาพ ร่างกาย",
-                        "ค่าอินเทอร์เน็ตบ้าน"
-                        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +52,7 @@ extension TransferVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListTransferCell else {
             return UITableViewCell()
         }
-        cell.listTransfer.text = listTransfer[indexPath.row]
+        cell.listTransfer.text = getName(name: indexPath.row)
         cell.listImageTransfer.image = getImage(name: indexPath.row)
         return cell
     }

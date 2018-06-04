@@ -14,17 +14,53 @@ protocol CreateTransferVCProtocol: BaseVCProtocol {
 
 class CreateTransferVC: BaseVC {
     
+    @IBOutlet weak var noteLabel: UILabel!
+    @IBOutlet weak var amountLabel: UITextField!
+    @IBOutlet weak var noteText: UITextField!
+    @IBOutlet weak var amountText: UITextField!
+    @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(caseTransfer ?? "")
+        overrideBackButton()
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        noteText.text = caseTransfer
+    }
+    
+    func setup() {
+//        noteLabel.font = UIFont.kanitCaptionLightStyle
+//        amountLabel.font = UIFont.kanitCaptionLightStyle
+//        noteText.font = UIFont.kanitCaptionLightStyle
+//        amountText.font = UIFont.kanitCaptionLightStyle
+    }
+    
+    @IBAction func incomeOrOutcome(_ sender: Any) {
+        let incomeOrOutcomeCase = inoutSegment.selectedSegmentIndex
+        switch incomeOrOutcomeCase {
+        case 0:
+            setUpOutCome()
+        case 1:
+            setupIncome()
+        default:
+            return
+        }
+    }
+    
+    func setUpOutCome() {
+        amountLabel.text = "จ่ายจำนวนเงิน"
+    }
+    
+    func setupIncome() {
+        amountLabel.text = "รับจำนวนเงิน"
+    }
 }
 
 extension CreateTransferVC: CreateTransferVCProtocol {

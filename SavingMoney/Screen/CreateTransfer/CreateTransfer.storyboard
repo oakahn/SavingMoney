@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,97 @@
             <objects>
                 <viewController storyboardIdentifier="CreateTransferVC" id="08h-dT-lJF" customClass="CreateTransferVC" customModule="SavingMoney" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qx1-jX-HrC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IR7-7h-BUn">
+                                <rect key="frame" x="25" y="79" width="270" height="29"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="รายจ่าย"/>
+                                    <segment title="รายรับ"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="incomeOrOutcome:" destination="08h-dT-lJF" eventType="valueChanged" id="WQf-eL-iT3"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCp-jG-8PD">
+                                <rect key="frame" x="5" y="132" width="310" height="431"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการที่จ่าย" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb7-UZ-GP6">
+                                        <rect key="frame" x="10" y="10" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-db-PW2">
+                                        <rect key="frame" x="20" y="36" width="280" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวนเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpa-47-tG0">
+                                        <rect key="frame" x="10" y="91" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2R3-os-gcI">
+                                        <rect key="frame" x="87" y="86" width="172.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="บาท" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3y-Jw-gnJ">
+                                        <rect key="frame" x="269.5" y="91" width="30.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="z3y-Jw-gnJ" firstAttribute="leading" secondItem="2R3-os-gcI" secondAttribute="trailing" constant="10" id="CFp-c3-Hnp"/>
+                                    <constraint firstItem="2R3-os-gcI" firstAttribute="leading" secondItem="Gpa-47-tG0" secondAttribute="trailing" constant="5" id="OX7-HI-Cfu"/>
+                                    <constraint firstItem="z3y-Jw-gnJ" firstAttribute="centerY" secondItem="2R3-os-gcI" secondAttribute="centerY" id="UdT-Pl-PWZ"/>
+                                    <constraint firstItem="Gpa-47-tG0" firstAttribute="top" secondItem="AXO-db-PW2" secondAttribute="bottom" constant="25" id="Vbg-yU-dSq"/>
+                                    <constraint firstAttribute="trailing" secondItem="z3y-Jw-gnJ" secondAttribute="trailing" constant="10" id="XPc-1k-Ocm"/>
+                                    <constraint firstItem="AXO-db-PW2" firstAttribute="top" secondItem="Mb7-UZ-GP6" secondAttribute="bottom" constant="5" id="ZMV-Vp-0L2"/>
+                                    <constraint firstItem="2R3-os-gcI" firstAttribute="centerY" secondItem="Gpa-47-tG0" secondAttribute="centerY" id="edp-5A-2ZT"/>
+                                    <constraint firstAttribute="trailing" secondItem="AXO-db-PW2" secondAttribute="trailing" constant="10" id="gJj-2p-lgJ"/>
+                                    <constraint firstItem="Gpa-47-tG0" firstAttribute="leading" secondItem="Mb7-UZ-GP6" secondAttribute="leading" id="kac-uW-hAh"/>
+                                    <constraint firstItem="Mb7-UZ-GP6" firstAttribute="leading" secondItem="tCp-jG-8PD" secondAttribute="leading" constant="10" id="n1j-kE-4RT"/>
+                                    <constraint firstItem="Mb7-UZ-GP6" firstAttribute="top" secondItem="tCp-jG-8PD" secondAttribute="top" constant="10" id="n8t-wJ-cc6"/>
+                                    <constraint firstItem="AXO-db-PW2" firstAttribute="leading" secondItem="tCp-jG-8PD" secondAttribute="leading" constant="20" id="usP-LV-Y4l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aXG-np-fuD" firstAttribute="bottom" secondItem="tCp-jG-8PD" secondAttribute="bottom" constant="5" id="0v9-zu-2lC"/>
+                            <constraint firstItem="aXG-np-fuD" firstAttribute="trailing" secondItem="IR7-7h-BUn" secondAttribute="trailing" constant="25" id="5LF-KX-Zpk"/>
+                            <constraint firstItem="IR7-7h-BUn" firstAttribute="centerX" secondItem="qx1-jX-HrC" secondAttribute="centerX" id="5dW-oB-9An"/>
+                            <constraint firstItem="aXG-np-fuD" firstAttribute="trailing" secondItem="tCp-jG-8PD" secondAttribute="trailing" constant="5" id="Rnq-1u-rL5"/>
+                            <constraint firstItem="IR7-7h-BUn" firstAttribute="leading" secondItem="aXG-np-fuD" secondAttribute="leading" constant="25" id="d07-Db-zDO"/>
+                            <constraint firstItem="tCp-jG-8PD" firstAttribute="top" secondItem="IR7-7h-BUn" secondAttribute="bottom" constant="25" id="r3X-ON-wW5"/>
+                            <constraint firstItem="tCp-jG-8PD" firstAttribute="leading" secondItem="aXG-np-fuD" secondAttribute="leading" constant="5" id="r5q-4e-Ezb"/>
+                            <constraint firstItem="IR7-7h-BUn" firstAttribute="top" secondItem="aXG-np-fuD" secondAttribute="top" constant="15" id="sQn-EY-0Ak"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aXG-np-fuD"/>
                     </view>
                     <navigationItem key="navigationItem" id="Se0-oC-Z98"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="2R3-os-gcI" id="AaQ-9H-Kax"/>
+                        <outlet property="amountText" destination="2R3-os-gcI" id="Fx2-Vw-ykY"/>
+                        <outlet property="inoutSegment" destination="IR7-7h-BUn" id="nX0-gi-aqH"/>
+                        <outlet property="noteLabel" destination="Mb7-UZ-GP6" id="x7N-2Y-nlm"/>
+                        <outlet property="noteText" destination="AXO-db-PW2" id="fbf-JT-3qC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jio-OJ-wDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210.40000000000001" y="107.49625187406298"/>
+            <point key="canvasLocation" x="210" y="106.69014084507042"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QF0-WP-gPG">
@@ -32,7 +113,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cL0-8i-ZxE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n2Q-zq-P5J">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class CornerButton: UIButton {
     required init?(coder aDecoder: NSCoder) {

@@ -34,7 +34,6 @@ class TransferVC: BaseVC {
     func setup() {
         listTransferTableView.delegate = self
         listTransferTableView.dataSource = self
-        overrideBackButton()
     }
 }
 

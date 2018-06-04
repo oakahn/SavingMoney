@@ -33,6 +33,7 @@
 		9C5E900120C1558B004BFC63 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E900020C1558B004BFC63 /* VC.swift */; };
 		9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */; };
 		9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */; };
+		9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30220C4DC8E00908D95 /* HistoryPresenter.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		9C5E900020C1558B004BFC63 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
 		9C5E900420C15A6E004BFC63 /* LoadingXibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingXibView.xib; sourceTree = "<group>"; };
 		9C5E900620C15AB5004BFC63 /* LoadingXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingXibView.swift; sourceTree = "<group>"; };
+		9C61E30220C4DC8E00908D95 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 		9C5E8FEB20C15314004BFC63 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				9C61E30120C4DC7900908D95 /* Presenter */,
 				9C5E8FED20C15328004BFC63 /* Router */,
 				9C5E8FEC20C15320004BFC63 /* VC */,
 				9C5E8FEE20C15348004BFC63 /* History.storyboard */,
@@ -261,6 +264,14 @@
 				9C5E900020C1558B004BFC63 /* VC.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9C61E30120C4DC7900908D95 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C61E30220C4DC8E00908D95 /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		AF99E595345A636BB62706A8 /* Frameworks */ = {
@@ -415,6 +426,7 @@
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
+				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,

@@ -18,7 +18,6 @@ class CornerView: UIView {
         layer.cornerRadius = 5
         layer.borderColor = UIColor.white.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)
-        layer.shadowRadius = 5
         layer.shadowOpacity = 0.5
     }
 }

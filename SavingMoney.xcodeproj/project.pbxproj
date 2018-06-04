@@ -39,6 +39,7 @@
 		9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30820C4E1BF00908D95 /* ListTransferCell.swift */; };
 		9C61E30C20C4E32C00908D95 /* DesignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */; };
 		9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */; };
+		9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31320C5224900908D95 /* CreateTransferVC.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		9C61E30820C4E1BF00908D95 /* ListTransferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTransferCell.swift; sourceTree = "<group>"; };
 		9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTableViewCell.swift; sourceTree = "<group>"; };
 		9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageTransferVC.swift; sourceTree = "<group>"; };
+		9C61E31320C5224900908D95 /* CreateTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferVC.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +197,7 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C61E30F20C5221C00908D95 /* CreateTransfer */,
 				9C08F48420C1A19D007E931B /* Transfer */,
 				9C5E8FEB20C15314004BFC63 /* History */,
 				9C5E8FE820C15274004BFC63 /* StartApp */,
@@ -295,6 +298,38 @@
 				9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */,
 			);
 			path = DesignTableView;
+			sourceTree = "<group>";
+		};
+		9C61E30F20C5221C00908D95 /* CreateTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				9C61E31220C5223600908D95 /* Router */,
+				9C61E31120C5223000908D95 /* Presenter */,
+				9C61E31020C5222B00908D95 /* VC */,
+			);
+			path = CreateTransfer;
+			sourceTree = "<group>";
+		};
+		9C61E31020C5222B00908D95 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C61E31320C5224900908D95 /* CreateTransferVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C61E31120C5223000908D95 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C61E31220C5223600908D95 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		AF99E595345A636BB62706A8 /* Frameworks */ = {
@@ -445,6 +480,7 @@
 				9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
+				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,

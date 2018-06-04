@@ -16,6 +16,7 @@ class TransferVC: BaseVC {
     
     @IBOutlet weak var listTransferTableView: UITableView!
     lazy var presenter = TransferPresenter(self)
+    lazy var router = TransferRouter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,7 @@ extension TransferVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60.0
     }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListTransferCell else {
             return UITableViewCell()
@@ -55,5 +57,9 @@ extension TransferVC: UITableViewDelegate, UITableViewDataSource {
         cell.listTransfer.text = getName(name: indexPath.row)
         cell.listImageTransfer.image = getImage(name: indexPath.row)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router.redirectToCreatetransaction(caseTransfer: getName(name: indexPath.row))
     }
 }

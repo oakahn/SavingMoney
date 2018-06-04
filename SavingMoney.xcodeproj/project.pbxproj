@@ -41,6 +41,9 @@
 		9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */; };
 		9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31320C5224900908D95 /* CreateTransferVC.swift */; };
 		9C61E31620C549F400908D95 /* CreateTransfer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31520C549F400908D95 /* CreateTransfer.storyboard */; };
+		9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31A20C5532F00908D95 /* SplashScreen.swift */; };
+		9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */; };
+		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +86,9 @@
 		9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageTransferVC.swift; sourceTree = "<group>"; };
 		9C61E31320C5224900908D95 /* CreateTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferVC.swift; sourceTree = "<group>"; };
 		9C61E31520C549F400908D95 /* CreateTransfer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTransfer.storyboard; sourceTree = "<group>"; };
+		9C61E31A20C5532F00908D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +205,7 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C61E31720C5529A00908D95 /* SplashScreen */,
 				9C61E30F20C5221C00908D95 /* CreateTransfer */,
 				9C08F48420C1A19D007E931B /* Transfer */,
 				9C5E8FEB20C15314004BFC63 /* History */,
@@ -335,6 +342,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9C61E31720C5529A00908D95 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9C61E31A20C5532F00908D95 /* SplashScreen.swift */,
+				9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */,
+				9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		AF99E595345A636BB62706A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */,
+				9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */,
 				9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */,
 				9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */,
 				9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */,
@@ -482,10 +500,12 @@
 				9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */,
 				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
 				9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */,
+				9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
+				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,

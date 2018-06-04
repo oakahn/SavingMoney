@@ -11,13 +11,13 @@ import UIKit
 
 
 class BaseRouter {
-    let appstart = "AppStart"
+    let appstart = "StartApp"
     let transfer = "Transfer"
     let history = "History"
     let createTransfer = "CreateTransfer"
     
     let routes: [String: String] = [
-        "AppStart": "AppStartVC",
+        "StartApp": "StartAppVC",
         "Transfer": "TransferVC",
         "History": "HistoryVC",
         "CreateTransfer": "CreateTransferVC"

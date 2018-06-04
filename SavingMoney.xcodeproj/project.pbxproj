@@ -36,6 +36,9 @@
 		9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30220C4DC8E00908D95 /* HistoryPresenter.swift */; };
 		9C61E30520C4DEC600908D95 /* TransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30420C4DEC600908D95 /* TransferRouter.swift */; };
 		9C61E30720C4DF2500908D95 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30620C4DF2500908D95 /* HistoryRouter.swift */; };
+		9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30820C4E1BF00908D95 /* ListTransferCell.swift */; };
+		9C61E30C20C4E32C00908D95 /* DesignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */; };
+		9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		9C61E30220C4DC8E00908D95 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		9C61E30420C4DEC600908D95 /* TransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRouter.swift; sourceTree = "<group>"; };
 		9C61E30620C4DF2500908D95 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		9C61E30820C4E1BF00908D95 /* ListTransferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTransferCell.swift; sourceTree = "<group>"; };
+		9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTableViewCell.swift; sourceTree = "<group>"; };
+		9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImageTransferVC.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 		9C08F48420C1A19D007E931B /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				9C61E30A20C4E2F800908D95 /* DesignTableView */,
 				9C08F48920C1A1D5007E931B /* Router */,
 				9C08F48820C1A1CF007E931B /* Presenter */,
 				9C08F48720C1A1C8007E931B /* VC */,
@@ -120,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				9C08F48A20C1A1FB007E931B /* TransferVC.swift */,
+				9C61E30820C4E1BF00908D95 /* ListTransferCell.swift */,
+				9C61E30D20C4E6F000908D95 /* GetImageTransferVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -280,6 +289,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		9C61E30A20C4E2F800908D95 /* DesignTableView */ = {
+			isa = PBXGroup;
+			children = (
+				9C61E30B20C4E32C00908D95 /* DesignTableViewCell.swift */,
+			);
+			path = DesignTableView;
+			sourceTree = "<group>";
+		};
 		AF99E595345A636BB62706A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */,
+				9C61E30C20C4E32C00908D95 /* DesignTableViewCell.swift in Sources */,
 				9C08F48F20C1A45C007E931B /* StartAppRouter.swift in Sources */,
 				9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */,
 				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
@@ -432,10 +450,12 @@
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
+				9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */,
 				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
+				9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */,
 				9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */,
 				9C61E30520C4DEC600908D95 /* TransferRouter.swift in Sources */,
 				9C61E30720C4DF2500908D95 /* HistoryRouter.swift in Sources */,

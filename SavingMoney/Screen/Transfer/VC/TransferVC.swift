@@ -14,10 +14,20 @@ protocol TransferProtocol: BaseVCProtocol {
 
 class TransferVC: BaseVC {
     
+    @IBOutlet weak var listTransferTableView: UITableView!
     lazy var presenter = TransferPresenter(self)
+    var listTransfer = ["อาหาร",
+                        "ค่าเดินทาง",
+                        "ค่าโทรศัพท์",
+                        "ค่าไฟ",
+                        "ค่าน้ำ",
+                        "สุขภาพ ร่างกาย",
+                        "ค่าอินเทอร์เน็ตบ้าน"
+                        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,8 +37,31 @@ class TransferVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         isHideTitle = false
     }
+    
+    func setup() {
+        listTransferTableView.delegate = self
+        listTransferTableView.dataSource = self
+    }
 }
 
 extension TransferVC: TransferProtocol {
     
+}
+
+extension TransferVC: UITableViewDelegate, UITableViewDataSource {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60.0
+    }
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListTransferCell else {
+            return UITableViewCell()
+        }
+        cell.listTransfer.text = listTransfer[indexPath.row]
+        cell.listImageTransfer.image = getImage(name: indexPath.row)
+        return cell
+    }
 }

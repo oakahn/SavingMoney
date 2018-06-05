@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Light.ttf">
+            <string>Kanit-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Create TransferVC-->
         <scene sceneID="nkb-AU-aI2">
@@ -34,32 +39,32 @@
                                 <rect key="frame" x="5" y="132" width="310" height="431"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายการที่จ่าย" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb7-UZ-GP6">
-                                        <rect key="frame" x="10" y="10" width="93" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="10" y="10" width="90" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-db-PW2">
-                                        <rect key="frame" x="20" y="36" width="280" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-db-PW2">
+                                        <rect key="frame" x="20" y="40.5" width="280" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวนเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpa-47-tG0">
-                                        <rect key="frame" x="10" y="91" width="72" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="10" y="95.5" width="72" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2R3-os-gcI">
-                                        <rect key="frame" x="87" y="86" width="172.5" height="30"/>
+                                        <rect key="frame" x="87" y="93" width="174.5" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="บาท" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3y-Jw-gnJ">
-                                        <rect key="frame" x="269.5" y="91" width="30.5" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="271.5" y="96" width="28.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -96,11 +101,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Se0-oC-Z98"/>
                     <connections>
-                        <outlet property="amountLabel" destination="2R3-os-gcI" id="AaQ-9H-Kax"/>
+                        <outlet property="amountLabel" destination="Gpa-47-tG0" id="sWN-ln-H8z"/>
                         <outlet property="amountText" destination="2R3-os-gcI" id="Fx2-Vw-ykY"/>
                         <outlet property="inoutSegment" destination="IR7-7h-BUn" id="nX0-gi-aqH"/>
-                        <outlet property="noteLabel" destination="Mb7-UZ-GP6" id="x7N-2Y-nlm"/>
-                        <outlet property="noteText" destination="AXO-db-PW2" id="fbf-JT-3qC"/>
+                        <outlet property="noteLabel" destination="Mb7-UZ-GP6" id="lU6-gF-xzk"/>
+                        <outlet property="noteText" destination="AXO-db-PW2" id="Rnr-SQ-BPC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jio-OJ-wDd" userLabel="First Responder" sceneMemberID="firstResponder"/>

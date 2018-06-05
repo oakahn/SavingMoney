@@ -15,7 +15,7 @@ protocol CreateTransferVCProtocol: BaseVCProtocol {
 class CreateTransferVC: BaseVC {
     
     @IBOutlet weak var noteLabel: UILabel!
-    @IBOutlet weak var amountLabel: UITextField!
+    @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var noteText: UITextField!
     @IBOutlet weak var amountText: UITextField!
     @IBOutlet weak var inoutSegment: UISegmentedControl!
@@ -24,7 +24,7 @@ class CreateTransferVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideBackButton()
-        setup()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,14 +32,12 @@ class CreateTransferVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        noteText.text = caseTransfer
+        setup()
     }
     
     func setup() {
-//        noteLabel.font = UIFont.kanitCaptionLightStyle
-//        amountLabel.font = UIFont.kanitCaptionLightStyle
-//        noteText.font = UIFont.kanitCaptionLightStyle
-//        amountText.font = UIFont.kanitCaptionLightStyle
+        noteText.becomeFirstResponder()
+        noteText.text = caseTransfer
     }
     
     @IBAction func incomeOrOutcome(_ sender: Any) {

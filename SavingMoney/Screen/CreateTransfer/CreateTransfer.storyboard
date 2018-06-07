@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -102,7 +102,7 @@
                     <navigationItem key="navigationItem" id="Se0-oC-Z98"/>
                     <connections>
                         <outlet property="amountLabel" destination="Gpa-47-tG0" id="sWN-ln-H8z"/>
-                        <outlet property="amountText" destination="2R3-os-gcI" id="Fx2-Vw-ykY"/>
+                        <outlet property="amountText" destination="2R3-os-gcI" id="ukT-E6-q7X"/>
                         <outlet property="inoutSegment" destination="IR7-7h-BUn" id="nX0-gi-aqH"/>
                         <outlet property="noteLabel" destination="Mb7-UZ-GP6" id="lU6-gF-xzk"/>
                         <outlet property="noteText" destination="AXO-db-PW2" id="Rnr-SQ-BPC"/>

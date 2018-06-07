@@ -19,7 +19,7 @@ class SplashScreenVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        displayLoading(message: "", hasBg: true)
+        displayLoading(message: "", hasBg: false)
         runTimer()
     }
     
@@ -38,7 +38,7 @@ class SplashScreenVC: BaseVC {
     
     func setup() {
         if second == 0 {
-//            hideLoading()
+            hideLoading()
             router.redirectToStartApp()
         }
     }

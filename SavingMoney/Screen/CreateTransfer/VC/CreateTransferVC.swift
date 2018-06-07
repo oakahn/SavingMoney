@@ -17,7 +17,7 @@ class CreateTransferVC: BaseVC {
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var noteText: UITextField!
-    @IBOutlet weak var am8ountText: UITextField!
+    @IBOutlet weak var amountText: UITextField!
     @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
     

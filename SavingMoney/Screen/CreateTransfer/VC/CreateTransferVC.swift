@@ -17,7 +17,7 @@ class CreateTransferVC: BaseVC {
     @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var noteText: UITextField!
-    @IBOutlet weak var amountText: UITextField!
+    @IBOutlet weak var am8ountText: UITextField!
     @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
     
@@ -38,6 +38,7 @@ class CreateTransferVC: BaseVC {
     func setup() {
         noteText.becomeFirstResponder()
         noteText.text = caseTransfer
+        noteLabel.text = "รายละเอียดที่จ่าย"
     }
     
     @IBAction func incomeOrOutcome(_ sender: Any) {
@@ -53,10 +54,12 @@ class CreateTransferVC: BaseVC {
     }
     
     func setUpOutCome() {
+        noteLabel.text = "รายละเอียดที่จ่าย"
         amountLabel.text = "จ่ายจำนวนเงิน"
     }
     
     func setupIncome() {
+        noteLabel.text = "รายละเอียดที่รับ"
         amountLabel.text = "รับจำนวนเงิน"
     }
 }

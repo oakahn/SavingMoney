@@ -8,6 +8,7 @@ target 'SavingMoney' do
   # Pods for SavingMoney
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
+	pod 'Firebase/Auth'
 	pod 'RxSwift'
   	pod 'RxCocoa'
     	pod 'RxAlamofire'

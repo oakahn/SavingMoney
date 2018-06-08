@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LoginVCProtocol: BaseVCProtocol {
-    func getusernameAndPassword(user: String, pass: String)
+    func loginSuccess(user: String, pass: String)
 }
 
 class LoginVC: BaseVC {
@@ -27,13 +27,14 @@ class LoginVC: BaseVC {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        presenter.getFirebase(userName: "user1", password: "")
+        presenter.getFirebase(userName: userNameText.text ?? "", password: passwordText.text ?? "")
     }
 }
 
 extension LoginVC: LoginVCProtocol {
-    func getusernameAndPassword(user: String, pass: String) {
-        print(user, pass)
+    func loginSuccess(user: String, pass: String) {
+//        displayMessage(title: "\(user)", message: "Success")
+        print("Success")
     }
     
     

@@ -28,29 +28,30 @@ class LoginPresenter {
     func setFirebaseFailed() {
         view?.displayMessage(title: "", message: "")
     }
+    
+    func validateUsername(username: String, passqord: String) {
+        
+    }
 }
 
 extension LoginPresenter: LoginPresenterProtocol {
     
-    
     func getFirebase(userName: String, password: String) {
         let db = Firestore.firestore()
-        db.collection("Username").getDocuments { (snap, error) in
+        db.collection("GetUserName").getDocuments { (snap, error) in
             if error != nil {
-                
             } else {
                 guard let snapData = snap?.documents else { return }
-                for data in snapData {
-                    let resp = Mapper<Database>().map(JSONObject: data.data())
-                    guard let username = resp?.name?.user?.username,
-                        let password = resp?.name?.user?.password else {
-                        return
-                    }
-                    self.view?.getusernameAndPassword(user: username, pass: password)
+                let resp = Mapper<Database>().map(JSONObject: snapData[0].data()[userName])
+                guard let user = resp?.username,
+                    let pass = resp?.password else { return }
+                if password == pass && userName == user {
+                    self.view?.loginSuccess(user: user, pass: pass)
+                } else {
+//                    self.view?.displayMessage(title: "not contain \(user)", message: "")
+                    print("Failed")
                 }
-                
             }
         }
     }
-    
 }

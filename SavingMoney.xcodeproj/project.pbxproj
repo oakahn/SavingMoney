@@ -15,6 +15,7 @@
 		9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48A20C1A1FB007E931B /* TransferVC.swift */; };
 		9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48C20C1A24F007E931B /* TransferPresenter.swift */; };
 		9C08F48F20C1A45C007E931B /* StartAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48E20C1A45C007E931B /* StartAppRouter.swift */; };
+		9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */; };
 		9C0EFD4C20C599DC00C556D7 /* Kanit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3920C599DC00C556D7 /* Kanit-ExtraLight.ttf */; };
 		9C0EFD4D20C599DC00C556D7 /* Kanit-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3A20C599DC00C556D7 /* Kanit-ThinItalic.ttf */; };
 		9C0EFD4E20C599DC00C556D7 /* Kanit-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3B20C599DC00C556D7 /* Kanit-BoldItalic.ttf */; };
@@ -80,6 +81,7 @@
 		9C08F48A20C1A1FB007E931B /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
 		9C08F48C20C1A24F007E931B /* TransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenter.swift; sourceTree = "<group>"; };
 		9C08F48E20C1A45C007E931B /* StartAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppRouter.swift; sourceTree = "<group>"; };
+		9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDatabase.swift; sourceTree = "<group>"; };
 		9C0EFD3920C599DC00C556D7 /* Kanit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLight.ttf"; sourceTree = "<group>"; };
 		9C0EFD3A20C599DC00C556D7 /* Kanit-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ThinItalic.ttf"; sourceTree = "<group>"; };
 		9C0EFD3B20C599DC00C556D7 /* Kanit-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9C0D290D20CA49EA003585B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9C0EFD3820C599DC00C556D7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +260,7 @@
 		9C5E8FCC20C13C86004BFC63 /* SavingMoney */ = {
 			isa = PBXGroup;
 			children = (
+				9C0D290D20CA49EA003585B0 /* Model */,
 				9C0EFD3820C599DC00C556D7 /* Fonts */,
 				9C5E8FFB20C15524004BFC63 /* Extension */,
 				9C5E8FF420C1548D004BFC63 /* Base */,
@@ -570,9 +581,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -587,9 +601,12 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -650,6 +667,7 @@
 				9CD7BC7E20C9346600AFAA0B /* LoginVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
+				9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
 				9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */,
 				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,

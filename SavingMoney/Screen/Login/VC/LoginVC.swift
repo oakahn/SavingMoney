@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuth
-import Firebase
 
 protocol LoginVCProtocol: BaseVCProtocol {
-    
+    func getusernameAndPassword(user: String, pass: String)
 }
 
 class LoginVC: BaseVC {
@@ -28,18 +26,15 @@ class LoginVC: BaseVC {
         super.didReceiveMemoryWarning()
     }
     
-    func login(username: String, password: String) {
-        
-    }
-    
     @IBAction func loginButton(_ sender: Any) {
-        guard let userText = userNameText.text, let passText = passwordText.text else {
-            return
-        }
-        login(username: userText, password: passText)
+        presenter.getFirebase(userName: "user1", password: "")
     }
 }
 
 extension LoginVC: LoginVCProtocol {
+    func getusernameAndPassword(user: String, pass: String) {
+        print(user, pass)
+    }
+    
     
 }

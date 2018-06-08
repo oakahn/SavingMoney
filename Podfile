@@ -13,5 +13,9 @@ target 'SavingMoney' do
 	pod 'RxSwift'
   	pod 'RxCocoa'
     	pod 'RxAlamofire'
+	pod 'Alamofire', '~> 4.7'
+  	pod 'AlamofireImage', '~> 3.3'
+  	pod 'ObjectMapper', '~> 3.1'
+  	pod 'AlamofireObjectMapper', '~> 5.0'
 
 end

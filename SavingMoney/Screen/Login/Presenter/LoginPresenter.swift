@@ -39,18 +39,14 @@ extension LoginPresenter: LoginPresenterProtocol {
     func getFirebase(userName: String, password: String) {
         let db = Firestore.firestore()
         db.collection("GetUserName").getDocuments { (snap, error) in
-            if error != nil {
+            guard error == nil else { return }
+            guard let snapData = snap?.documents else { return }
+            let resp = Mapper<Database>().map(JSONObject: snapData[0].data()[userName])
+            guard let user = resp?.username, let pass = resp?.password else { return }
+            if password == pass && userName == user {
+                self.view?.loginSuccess(user: user, pass: pass)
             } else {
-                guard let snapData = snap?.documents else { return }
-                let resp = Mapper<Database>().map(JSONObject: snapData[0].data()[userName])
-                guard let user = resp?.username,
-                    let pass = resp?.password else { return }
-                if password == pass && userName == user {
-                    self.view?.loginSuccess(user: user, pass: pass)
-                } else {
-//                    self.view?.displayMessage(title: "not contain \(user)", message: "")
-                    print("Failed")
-                }
+                self.view?.displayMessage(title: "not contain \(user)", message: "")
             }
         }
     }

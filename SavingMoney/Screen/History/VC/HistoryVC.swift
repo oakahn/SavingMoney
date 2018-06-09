@@ -14,6 +14,8 @@ protocol HistoryVCProtocol: BaseVCProtocol {
 
 class HistoryVC: BaseVC {
     
+    lazy var presenter = HistoryPresenter(self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

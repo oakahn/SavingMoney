@@ -33,7 +33,7 @@ class LoginVC: BaseVC {
 
 extension LoginVC: LoginVCProtocol {
     func loginSuccess(user: String, pass: String) {
-//        displayMessage(title: "\(user)", message: "Success")
+        displayMessage(title: "\(user)", message: "Success")
         print("Success")
     }
     

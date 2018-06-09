@@ -18,12 +18,37 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kanit-ExtraLight.ttf</string>
+		<string>Kanit-ThinItalic.ttf</string>
+		<string>Kanit-BoldItalic.ttf</string>
+		<string>Kanit-SemiBold.ttf</string>
+		<string>Kanit-Black.tff</string>
+		<string>Kanit-Regular.tff</string>
+		<string>Kanit-Italic.tff</string>
+		<string>Kanit-MediumItalic.tff</string>
+		<string>Kanit-Thin.tff</string>
+		<string>Kanit-ExtraBoldItalic.tff</string>
+		<string>Kanit-ExtraBold.tff</string>
+		<string>Kanit-Bold.tff</string>
+		<string>Kanit-SemiBoldItalic.tff</string>
+		<string>Kanit-BlackItalic.tff</string>
+		<string>Kanit-Light.tff</string>
+		<string>Kanit-LightItalic.tff</string>
+		<string>Kanit-ExtraLightItalic.tff</string>
+		<string>Kanit-Medium.tff</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Login</string>
+	<string>SplashScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -41,5 +66,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>alo</key>
+	<true/>
 </dict>
 </plist>

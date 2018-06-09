@@ -39,6 +39,7 @@ class CreateTransferVC: BaseVC {
         noteText.becomeFirstResponder()
         noteText.text = caseTransfer
         noteLabel.text = "รายละเอียดที่จ่าย"
+        noteLabel.font = UIFont.kanitH8MediumStyle
     }
     
     @IBAction func incomeOrOutcome(_ sender: Any) {

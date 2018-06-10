@@ -37,6 +37,7 @@
 		9C0EFD5E20C599DC00C556D7 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */; };
 		9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */; };
 		9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */; };
+		9C27FA8920CD4981000257EE /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8820CD4981000257EE /* HistoryModel.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
 		9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* StartApp.swift */; };
 		9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */; };
@@ -105,6 +106,7 @@
 		9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferPresenter.swift; sourceTree = "<group>"; };
 		9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferRouter.swift; sourceTree = "<group>"; };
+		9C27FA8820CD4981000257EE /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E8FCF20C13C86004BFC63 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */,
+				9C27FA8820CD4981000257EE /* HistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */,
 				9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
+				9C27FA8920CD4981000257EE /* HistoryModel.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,

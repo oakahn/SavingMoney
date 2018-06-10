@@ -20,6 +20,7 @@ class CreateTransferVC: BaseVC {
     @IBOutlet weak var amountText: UITextField!
     @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
+    lazy var presenter = CreateTransferPersenter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()

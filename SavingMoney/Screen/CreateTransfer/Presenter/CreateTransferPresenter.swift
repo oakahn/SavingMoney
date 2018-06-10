@@ -7,17 +7,37 @@
 //
 
 import Foundation
+import ObjectMapper
+import FirebaseFirestore
 
 protocol CreateTransferPresenterProtocol {
     func getHistorySaving()
 }
 
 class CreateTransferPersenter {
-    
+
     var view: CreateTransferVCProtocol?
     
     init(_ view: CreateTransferVCProtocol) {
         self.view = view
+    }
+    
+    func xx() -> [String:Any]{
+        let docData: [String: Any] = [
+            "stringExample": "Hello world!",
+            "booleanExample": true,
+            "numberExample": 3.14159265,
+            "dateExample": NSDate(),
+            "arrayExample": [5, true, "hello"],
+            "nullExample": NSNull(),
+            "objectExample": [
+                "a": 5,
+                "b": [
+                    "nested": "foo"
+                ]
+            ]
+        ]
+        return docData
     }
 }
 
@@ -25,5 +45,17 @@ extension CreateTransferPersenter: CreateTransferPresenterProtocol {
     
     func getHistorySaving() {
         
+    }
+}
+
+struct ListItem {
+    var date: String?
+    var type: String?
+    var amount: [String]?
+    
+    init(date: String, type: String, amount: [String]) {
+        self.date = date
+        self.type = type
+        self.amount = amount
     }
 }

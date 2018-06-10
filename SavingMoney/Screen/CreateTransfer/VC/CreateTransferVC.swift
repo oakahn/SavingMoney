@@ -25,7 +25,7 @@ class CreateTransferVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideBackButton()
-        
+        presenter.getHistorySaving()
     }
     
     override func didReceiveMemoryWarning() {

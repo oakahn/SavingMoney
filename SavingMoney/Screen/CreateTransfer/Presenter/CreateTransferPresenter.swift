@@ -45,11 +45,33 @@ extension CreateTransferPersenter: CreateTransferPresenterProtocol {
     
     func getHistorySaving() {
         let db = Firestore.firestore().collection("History")
-        db.getDocuments { (snap, error) in
+//        db.getDocuments { (snap, error) in
+//            guard error == nil else { return }
+//            guard let snapData = snap?.documents else { return }
+//            let resp = Mapper<HistoryModel>().map(JSONObject: snapData[0].data())
+//            print(resp?.history?.count)
+//        }
+//        let db = Firestore.firestore().collection("History")
+//        db.getDocuments { (snap, error) in
+//            guard error == nil else { return }
+//            guard let snapdata = snap?.documents else { return }
+//            print(snapdata[0].data()["user1"] ?? "")
+//            let resp = Mapper<HistoryModel>().map(JSONObject: snapdata[0].data()["user1"])
+//            print(resp?.history)
+//        }
+        
+    
+//        var listArray = ["7", "8", "9", "10", "11", "12", "13", "14"]
+//        listArray.append("15")
+//
+//        db.document("user1").updateData(["historyuser1": listArray]) { (error) in
+//
+//        }
+        
+        db.document("user1").getDocument { (snap, error) in
             guard error == nil else { return }
-            guard let snapData = snap?.documents else { return }
-            let resp = Mapper<HistoryModel>().map(JSONObject: snapData[0].data())
-            print(resp?.history?.count)
+            let resp = Mapper<HistoryModel>().map(JSONObject: snap?.data())
+            print(resp?.history)
         }
     }
 }

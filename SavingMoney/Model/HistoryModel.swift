@@ -12,11 +12,27 @@ import ObjectMapper
 class HistoryModel: Mappable {
     
     var history: [String]?
+    
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        history <- map["a"]
+        history <- map["historyuser1"]
+    }
+}
+
+class History: Mappable {
+    
+    var data1: String?
+    var data2: String?
+    var data3: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        
     }
 }

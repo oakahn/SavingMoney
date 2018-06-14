@@ -67,6 +67,8 @@
 		9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31A20C5532F00908D95 /* SplashScreen.swift */; };
 		9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */; };
 		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
+		9C8EF66820D2949D00A54770 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EF66720D2949D00A54770 /* TestVC.swift */; };
+		9C8EF66A20D294E500A54770 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EF66920D294E500A54770 /* TestPresenter.swift */; };
 		9CD7BC7A20C9335C00AFAA0B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7920C9335C00AFAA0B /* Login.storyboard */; };
 		9CD7BC7E20C9346600AFAA0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7D20C9346600AFAA0B /* LoginVC.swift */; };
 		9CD7BC8020C9350E00AFAA0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7F20C9350E00AFAA0B /* LoginPresenter.swift */; };
@@ -138,6 +140,8 @@
 		9C61E31A20C5532F00908D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		9C8EF66720D2949D00A54770 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		9C8EF66920D294E500A54770 /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		9CD7BC7920C9335C00AFAA0B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9CD7BC7D20C9346600AFAA0B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9CD7BC7F20C9350E00AFAA0B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -294,6 +298,7 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C8EF66620D2948B00A54770 /* Test */,
 				9CD7BC7520C9333700AFAA0B /* Login */,
 				9C61E31720C5529A00908D95 /* SplashScreen */,
 				9C61E30F20C5221C00908D95 /* CreateTransfer */,
@@ -442,6 +447,15 @@
 				9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		9C8EF66620D2948B00A54770 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EF66720D2949D00A54770 /* TestVC.swift */,
+				9C8EF66920D294E500A54770 /* TestPresenter.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		9CD7BC7520C9333700AFAA0B /* Login */ = {
@@ -677,11 +691,13 @@
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9CD7BC7E20C9346600AFAA0B /* LoginVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
+				9C8EF66820D2949D00A54770 /* TestVC.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
 				9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */,
 				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,
+				9C8EF66A20D294E500A54770 /* TestPresenter.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
 				9CD7BC8020C9350E00AFAA0B /* LoginPresenter.swift in Sources */,

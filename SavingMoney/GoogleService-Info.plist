@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>313817990068-vf633vj221bg1gkvs8u911aduq20ppj8.apps.googleusercontent.com</string>
+	<string>911732699051-rf3mr9rmchjp2b2n7smc6l6co9m47o06.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.313817990068-vf633vj221bg1gkvs8u911aduq20ppj8</string>
+	<string>com.googleusercontent.apps.911732699051-rf3mr9rmchjp2b2n7smc6l6co9m47o06</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDynZ3CiH24WpLgXoQ1xlykmS5eDBdI-2E</string>
+	<string>AIzaSyAhLwdE2Pq8w_hx8XjLoMHo4-wQlHAcfVk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>313817990068</string>
+	<string>911732699051</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.Notifications-Test</string>
+	<string>com.example.SavingMoney</string>
 	<key>PROJECT_ID</key>
-	<string>getfirebaseswift</string>
+	<string>savingaccount-3d404</string>
 	<key>STORAGE_BUCKET</key>
-	<string>getfirebaseswift.appspot.com</string>
+	<string>savingaccount-3d404.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:313817990068:ios:5ca46efbe81394a0</string>
+	<string>1:911732699051:ios:f59309c25ee98861</string>
 	<key>DATABASE_URL</key>
-	<string>https://getfirebaseswift.firebaseio.com</string>
+	<string>https://savingaccount-3d404.firebaseio.com</string>
 </dict>
 </plist>

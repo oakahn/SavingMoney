@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C005DEE211C29520039DBA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C005DED211C29520039DBA7 /* GoogleService-Info.plist */; };
 		9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDB720C1756B00071802 /* StartAppPresenter.swift */; };
 		9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDB920C175DD00071802 /* BasePresenter.swift */; };
 		9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDBB20C176C900071802 /* ScreenError.swift */; };
@@ -44,7 +45,6 @@
 		9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD420C13C86004BFC63 /* Assets.xcassets */; };
 		9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD620C13C86004BFC63 /* LaunchScreen.storyboard */; };
 		9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FDF20C148B7004BFC63 /* CornerView.swift */; };
-		9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */; };
 		9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */; };
 		9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FEE20C15348004BFC63 /* History.storyboard */; };
 		9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */; };
@@ -67,15 +67,13 @@
 		9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31A20C5532F00908D95 /* SplashScreen.swift */; };
 		9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */; };
 		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
-		9CD7BC7A20C9335C00AFAA0B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7920C9335C00AFAA0B /* Login.storyboard */; };
-		9CD7BC7E20C9346600AFAA0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7D20C9346600AFAA0B /* LoginVC.swift */; };
-		9CD7BC8020C9350E00AFAA0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7BC7F20C9350E00AFAA0B /* LoginPresenter.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		738D03E4C1DCF568B725E039 /* Pods-SavingMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		741668BB3016416278A2693E /* Pods-SavingMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavingMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavingMoney/Pods-SavingMoney.release.xcconfig"; sourceTree = "<group>"; };
+		9C005DED211C29520039DBA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C04BDB720C1756B00071802 /* StartAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppPresenter.swift; sourceTree = "<group>"; };
 		9C04BDB920C175DD00071802 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		9C04BDBB20C176C900071802 /* ScreenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenError.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		9C5E8FD720C13C86004BFC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C5E8FD920C13C86004BFC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5E8FDF20C148B7004BFC63 /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
-		9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerButton.swift; sourceTree = "<group>"; };
 		9C5E8FEE20C15348004BFC63 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -138,9 +135,6 @@
 		9C61E31A20C5532F00908D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
-		9CD7BC7920C9335C00AFAA0B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		9CD7BC7D20C9346600AFAA0B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		9CD7BC7F20C9350E00AFAA0B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -277,7 +271,7 @@
 				9C5E8FD420C13C86004BFC63 /* Assets.xcassets */,
 				9C5E8FD620C13C86004BFC63 /* LaunchScreen.storyboard */,
 				9C5E8FD920C13C86004BFC63 /* Info.plist */,
-				9C5E8FE120C14975004BFC63 /* GoogleService-Info.plist */,
+				9C005DED211C29520039DBA7 /* GoogleService-Info.plist */,
 			);
 			path = SavingMoney;
 			sourceTree = "<group>";
@@ -294,7 +288,6 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				9CD7BC7520C9333700AFAA0B /* Login */,
 				9C61E31720C5529A00908D95 /* SplashScreen */,
 				9C61E30F20C5221C00908D95 /* CreateTransfer */,
 				9C08F48420C1A19D007E931B /* Transfer */,
@@ -444,40 +437,6 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
-		9CD7BC7520C9333700AFAA0B /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				9CD7BC7C20C9342D00AFAA0B /* Router */,
-				9CD7BC7B20C9341200AFAA0B /* Presenter */,
-				9CD7BC7620C9334000AFAA0B /* VC */,
-				9CD7BC7920C9335C00AFAA0B /* Login.storyboard */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		9CD7BC7620C9334000AFAA0B /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				9CD7BC7D20C9346600AFAA0B /* LoginVC.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		9CD7BC7B20C9341200AFAA0B /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				9CD7BC7F20C9350E00AFAA0B /* LoginPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		9CD7BC7C20C9342D00AFAA0B /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		AF99E595345A636BB62706A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,11 +513,11 @@
 				9C0EFD5320C599DC00C556D7 /* Kanit-MediumItalic.ttf in Resources */,
 				9C0EFD5E20C599DC00C556D7 /* Kanit-Medium.ttf in Resources */,
 				9C0EFD4D20C599DC00C556D7 /* Kanit-ThinItalic.ttf in Resources */,
+				9C005DEE211C29520039DBA7 /* GoogleService-Info.plist in Resources */,
 				9C0EFD5120C599DC00C556D7 /* Kanit-Regular.ttf in Resources */,
 				9C0EFD5220C599DC00C556D7 /* Kanit-Italic.ttf in Resources */,
 				9C0EFD5A20C599DC00C556D7 /* Kanit-BlackItalic.ttf in Resources */,
 				9C0EFD5C20C599DC00C556D7 /* Kanit-LightItalic.ttf in Resources */,
-				9C5E8FE220C14975004BFC63 /* GoogleService-Info.plist in Resources */,
 				9C5E8FD520C13C86004BFC63 /* Assets.xcassets in Resources */,
 				9C5E900520C15A6E004BFC63 /* LoadingXibView.xib in Resources */,
 				9C0EFD5D20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf in Resources */,
@@ -571,7 +530,6 @@
 				9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */,
 				9C0EFD5720C599DC00C556D7 /* Kanit-Bold.ttf in Resources */,
 				9C0EFD5020C599DC00C556D7 /* Kanit-Black.ttf in Resources */,
-				9CD7BC7A20C9335C00AFAA0B /* Login.storyboard in Resources */,
 				9C0EFD5620C599DC00C556D7 /* Kanit-ExtraBold.ttf in Resources */,
 				9C0EFD5520C599DC00C556D7 /* Kanit-ExtraBoldItalic.ttf in Resources */,
 				9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */,
@@ -675,7 +633,6 @@
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
-				9CD7BC7E20C9346600AFAA0B /* LoginVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */,
@@ -684,7 +641,6 @@
 				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
-				9CD7BC8020C9350E00AFAA0B /* LoginPresenter.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
 				9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */,
 				9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */,

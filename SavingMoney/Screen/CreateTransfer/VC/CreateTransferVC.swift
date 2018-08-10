@@ -25,7 +25,6 @@ class CreateTransferVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideBackButton()
-        presenter.getHistorySaving()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,6 +62,10 @@ class CreateTransferVC: BaseVC {
     func setupIncome() {
         noteLabel.text = "รายละเอียดที่รับ"
         amountLabel.text = "รับจำนวนเงิน"
+    }
+    
+    @IBAction func submitTransfer(_ sender: Any) {
+        presenter.submitTransfer(title: noteText.text ?? "", message: amountText.text ?? "")
     }
 }
 

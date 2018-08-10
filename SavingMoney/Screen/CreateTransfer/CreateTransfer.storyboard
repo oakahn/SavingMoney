@@ -13,6 +13,9 @@
         <array key="Kanit-Light.ttf">
             <string>Kanit-Light</string>
         </array>
+        <array key="Kanit-Medium.ttf">
+            <string>Kanit-Medium</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Create TransferVC-->
@@ -68,10 +71,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3W-fr-QQ4" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="196.5" width="210" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Kanit-Medium" family="Kanit" pointSize="17"/>
+                                        <state key="normal" title="ตกลง">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitTransfer:" destination="08h-dT-lJF" eventType="touchUpInside" id="BNk-hk-oM0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="z3y-Jw-gnJ" firstAttribute="leading" secondItem="2R3-os-gcI" secondAttribute="trailing" constant="10" id="CFp-c3-Hnp"/>
+                                    <constraint firstAttribute="trailing" secondItem="X3W-fr-QQ4" secondAttribute="trailing" constant="50" id="D9V-2X-h5v"/>
+                                    <constraint firstItem="X3W-fr-QQ4" firstAttribute="centerX" secondItem="tCp-jG-8PD" secondAttribute="centerX" id="DeU-EX-xoq"/>
                                     <constraint firstItem="2R3-os-gcI" firstAttribute="leading" secondItem="Gpa-47-tG0" secondAttribute="trailing" constant="5" id="OX7-HI-Cfu"/>
                                     <constraint firstItem="z3y-Jw-gnJ" firstAttribute="centerY" secondItem="2R3-os-gcI" secondAttribute="centerY" id="UdT-Pl-PWZ"/>
                                     <constraint firstItem="Gpa-47-tG0" firstAttribute="top" secondItem="AXO-db-PW2" secondAttribute="bottom" constant="25" id="Vbg-yU-dSq"/>
@@ -81,8 +97,10 @@
                                     <constraint firstAttribute="trailing" secondItem="AXO-db-PW2" secondAttribute="trailing" constant="10" id="gJj-2p-lgJ"/>
                                     <constraint firstItem="Gpa-47-tG0" firstAttribute="leading" secondItem="Mb7-UZ-GP6" secondAttribute="leading" id="kac-uW-hAh"/>
                                     <constraint firstItem="Mb7-UZ-GP6" firstAttribute="leading" secondItem="tCp-jG-8PD" secondAttribute="leading" constant="10" id="n1j-kE-4RT"/>
+                                    <constraint firstItem="X3W-fr-QQ4" firstAttribute="centerY" secondItem="tCp-jG-8PD" secondAttribute="centerY" id="n3R-yM-FNq"/>
                                     <constraint firstItem="Mb7-UZ-GP6" firstAttribute="top" secondItem="tCp-jG-8PD" secondAttribute="top" constant="10" id="n8t-wJ-cc6"/>
                                     <constraint firstItem="AXO-db-PW2" firstAttribute="leading" secondItem="tCp-jG-8PD" secondAttribute="leading" constant="20" id="usP-LV-Y4l"/>
+                                    <constraint firstItem="X3W-fr-QQ4" firstAttribute="leading" secondItem="tCp-jG-8PD" secondAttribute="leading" constant="50" id="vFc-yG-CKb"/>
                                 </constraints>
                             </view>
                         </subviews>

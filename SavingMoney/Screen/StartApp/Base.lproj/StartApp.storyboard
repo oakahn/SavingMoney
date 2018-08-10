@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7L8-CT-v8h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7L8-CT-v8h">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Kanit-Light.ttf">
-            <string>Kanit-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Saving-->
         <scene sceneID="tne-QT-ifu">
@@ -27,48 +22,46 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-If-nMu">
                                 <rect key="frame" x="14.5" y="13.5" width="291" height="541"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="250" width="242" height="41"/>
-                                        <color key="backgroundColor" red="0.99959987400000005" green="0.98866778609999995" blue="0.94900566340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
-                                        <state key="normal" title="History">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="295.5" width="191" height="195.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="scroll">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="redirectToHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTA-PC-b7N"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="50" width="191" height="195.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="coins">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="redirectToTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ1-fw-wR3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="psk-Jz-slF" firstAttribute="centerX" secondItem="eQz-If-nMu" secondAttribute="centerX" id="1P7-mb-cv7"/>
-                                    <constraint firstItem="psk-Jz-slF" firstAttribute="centerY" secondItem="eQz-If-nMu" secondAttribute="centerY" id="yZs-wY-eQi"/>
+                                    <constraint firstAttribute="bottom" secondItem="psk-Jz-slF" secondAttribute="bottom" constant="50" id="1La-Ef-L0p"/>
+                                    <constraint firstAttribute="trailing" secondItem="psk-Jz-slF" secondAttribute="trailing" constant="50" id="DT9-GB-JB8"/>
+                                    <constraint firstItem="isv-uS-PSd" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="50" id="UCv-NA-Yx2"/>
+                                    <constraint firstItem="isv-uS-PSd" firstAttribute="top" secondItem="eQz-If-nMu" secondAttribute="top" constant="50" id="cHY-D4-5tm"/>
+                                    <constraint firstItem="psk-Jz-slF" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="50" id="etK-09-x5i"/>
+                                    <constraint firstItem="psk-Jz-slF" firstAttribute="top" secondItem="isv-uS-PSd" secondAttribute="bottom" constant="50" id="euz-TG-tff"/>
+                                    <constraint firstAttribute="trailing" secondItem="isv-uS-PSd" secondAttribute="trailing" constant="50" id="kvJ-qQ-A48"/>
+                                    <constraint firstItem="psk-Jz-slF" firstAttribute="height" secondItem="isv-uS-PSd" secondAttribute="height" id="yoB-wZ-yOn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
-                                <rect key="frame" x="39" y="198" width="242" height="41"/>
-                                <color key="backgroundColor" red="0.9995998740196228" green="0.98866778612136841" blue="0.94900566339492798" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
-                                <state key="normal" title="รายรับ - รายจ่าย">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="redirectToTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ1-fw-wR3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eQz-If-nMu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.1" id="38H-wk-SYD"/>
-                            <constraint firstItem="isv-uS-PSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cao-bz-WpH"/>
-                            <constraint firstItem="isv-uS-PSd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:1.3" id="NQM-HZ-a5H"/>
-                            <constraint firstItem="isv-uS-PSd" firstAttribute="height" secondItem="eQz-If-nMu" secondAttribute="height" multiplier="1:13" id="VMj-PF-a25"/>
                             <constraint firstItem="eQz-If-nMu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqq-HB-Hkt"/>
-                            <constraint firstItem="psk-Jz-slF" firstAttribute="width" secondItem="isv-uS-PSd" secondAttribute="width" id="hAl-48-eAV"/>
                             <constraint firstItem="eQz-If-nMu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mL5-ZM-SVv"/>
                             <constraint firstItem="eQz-If-nMu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1.05" id="upf-vF-EGH"/>
-                            <constraint firstItem="psk-Jz-slF" firstAttribute="height" secondItem="isv-uS-PSd" secondAttribute="height" id="xQ8-58-cQf"/>
-                            <constraint firstItem="isv-uS-PSd" firstAttribute="width" secondItem="eQz-If-nMu" secondAttribute="width" multiplier="1:1.2" id="zdO-hx-lyQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -97,4 +90,8 @@
             <point key="canvasLocation" x="-454" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coins" width="512" height="512"/>
+        <image name="scroll" width="512" height="512"/>
+    </resources>
 </document>

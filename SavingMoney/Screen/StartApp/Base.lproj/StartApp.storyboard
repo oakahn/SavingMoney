@@ -22,37 +22,81 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-If-nMu">
                                 <rect key="frame" x="14.5" y="13.5" width="291" height="541"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="295.5" width="191" height="195.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTe-2H-Yre">
+                                        <rect key="frame" x="20" y="40" width="251" height="210.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                                <rect key="frame" x="60" y="0.0" width="131" height="165.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="coins">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="redirectToTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ1-fw-wR3"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A17-rX-f5m">
+                                                <rect key="frame" x="75" y="170.5" width="101" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="scroll">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="redirectToHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTA-PC-b7N"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="50" width="191" height="195.5"/>
+                                        <constraints>
+                                            <constraint firstItem="isv-uS-PSd" firstAttribute="top" secondItem="PTe-2H-Yre" secondAttribute="top" id="2uh-oV-5NO"/>
+                                            <constraint firstAttribute="trailing" secondItem="isv-uS-PSd" secondAttribute="trailing" constant="60" id="Bsz-xM-3HT"/>
+                                            <constraint firstAttribute="trailing" secondItem="A17-rX-f5m" secondAttribute="trailing" constant="75" id="FWF-KP-nzO"/>
+                                            <constraint firstAttribute="bottom" secondItem="isv-uS-PSd" secondAttribute="bottom" constant="45" id="aZB-Wj-Szz"/>
+                                            <constraint firstItem="A17-rX-f5m" firstAttribute="top" secondItem="isv-uS-PSd" secondAttribute="bottom" constant="5" id="bQs-Bm-DLg"/>
+                                            <constraint firstItem="isv-uS-PSd" firstAttribute="leading" secondItem="PTe-2H-Yre" secondAttribute="leading" constant="60" id="h5B-1z-EhE"/>
+                                            <constraint firstAttribute="bottom" secondItem="A17-rX-f5m" secondAttribute="bottom" constant="5" id="oiH-bO-3h1"/>
+                                            <constraint firstItem="A17-rX-f5m" firstAttribute="leading" secondItem="PTe-2H-Yre" secondAttribute="leading" constant="75" id="xtK-OQ-sIK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-hS-ox4">
+                                        <rect key="frame" x="20" y="290.5" width="251" height="210.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
+                                                <rect key="frame" x="60" y="0.0" width="131" height="165.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="scroll">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="redirectToHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTA-PC-b7N"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-EQ-gSA">
+                                                <rect key="frame" x="75" y="170.5" width="101" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="coins">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="redirectToTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ1-fw-wR3"/>
-                                        </connections>
-                                    </button>
+                                        <constraints>
+                                            <constraint firstItem="psk-Jz-slF" firstAttribute="top" secondItem="Vyn-hS-ox4" secondAttribute="top" id="4dm-6y-7wH"/>
+                                            <constraint firstAttribute="bottom" secondItem="MzJ-EQ-gSA" secondAttribute="bottom" constant="5" id="8wJ-4p-Lqp"/>
+                                            <constraint firstItem="MzJ-EQ-gSA" firstAttribute="top" secondItem="psk-Jz-slF" secondAttribute="bottom" constant="5" id="GBj-YG-wqo"/>
+                                            <constraint firstItem="MzJ-EQ-gSA" firstAttribute="leading" secondItem="Vyn-hS-ox4" secondAttribute="leading" constant="75" id="IQ8-tY-1WN"/>
+                                            <constraint firstItem="psk-Jz-slF" firstAttribute="leading" secondItem="Vyn-hS-ox4" secondAttribute="leading" constant="60" id="PlO-XF-aKv"/>
+                                            <constraint firstAttribute="bottom" secondItem="psk-Jz-slF" secondAttribute="bottom" constant="45" id="Qur-jv-3q1"/>
+                                            <constraint firstAttribute="trailing" secondItem="psk-Jz-slF" secondAttribute="trailing" constant="60" id="euN-ue-heY"/>
+                                            <constraint firstAttribute="trailing" secondItem="MzJ-EQ-gSA" secondAttribute="trailing" constant="75" id="uNe-4B-XGv"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="psk-Jz-slF" secondAttribute="bottom" constant="50" id="1La-Ef-L0p"/>
-                                    <constraint firstAttribute="trailing" secondItem="psk-Jz-slF" secondAttribute="trailing" constant="50" id="DT9-GB-JB8"/>
-                                    <constraint firstItem="isv-uS-PSd" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="50" id="UCv-NA-Yx2"/>
-                                    <constraint firstItem="isv-uS-PSd" firstAttribute="top" secondItem="eQz-If-nMu" secondAttribute="top" constant="50" id="cHY-D4-5tm"/>
-                                    <constraint firstItem="psk-Jz-slF" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="50" id="etK-09-x5i"/>
-                                    <constraint firstItem="psk-Jz-slF" firstAttribute="top" secondItem="isv-uS-PSd" secondAttribute="bottom" constant="50" id="euz-TG-tff"/>
-                                    <constraint firstAttribute="trailing" secondItem="isv-uS-PSd" secondAttribute="trailing" constant="50" id="kvJ-qQ-A48"/>
-                                    <constraint firstItem="psk-Jz-slF" firstAttribute="height" secondItem="isv-uS-PSd" secondAttribute="height" id="yoB-wZ-yOn"/>
+                                    <constraint firstItem="Vyn-hS-ox4" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="20" id="4bs-1T-xFI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vyn-hS-ox4" secondAttribute="trailing" constant="20" id="6XQ-y2-RPq"/>
+                                    <constraint firstItem="PTe-2H-Yre" firstAttribute="top" secondItem="eQz-If-nMu" secondAttribute="top" constant="40" id="PQy-eF-VgI"/>
+                                    <constraint firstItem="Vyn-hS-ox4" firstAttribute="height" secondItem="PTe-2H-Yre" secondAttribute="height" id="WtI-ek-5jO"/>
+                                    <constraint firstItem="Vyn-hS-ox4" firstAttribute="top" secondItem="PTe-2H-Yre" secondAttribute="bottom" constant="40" id="YJ9-77-WXx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vyn-hS-ox4" secondAttribute="bottom" constant="40" id="kih-9L-JMi"/>
+                                    <constraint firstAttribute="trailing" secondItem="PTe-2H-Yre" secondAttribute="trailing" constant="20" id="nFQ-IX-kpn"/>
+                                    <constraint firstItem="PTe-2H-Yre" firstAttribute="leading" secondItem="eQz-If-nMu" secondAttribute="leading" constant="20" id="nge-V4-lYb"/>
                                 </constraints>
                             </view>
                         </subviews>

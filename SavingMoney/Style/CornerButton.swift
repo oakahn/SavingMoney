@@ -16,7 +16,7 @@ class CornerButton: UIButton {
     }
     
     func setup() {
-        layer.shadowColor = UIColor.orange.cgColor
+//        layer.shadowColor = UIColor.orange.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)
 //        layer.masksToBounds = false
         layer.shadowRadius = 4.0

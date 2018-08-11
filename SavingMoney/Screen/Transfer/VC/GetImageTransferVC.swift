@@ -9,47 +9,31 @@
 import Foundation
 import UIKit
 
+struct ListTransfer {
+    let listItem: [String] = ["foodImage",
+                              "carImage",
+                              "mobileImage",
+                              "fireImage",
+                              "waterImage",
+                              "drugImage",
+                              "internetImage"]
+    
+    let valueListTransfer: [String] = ["ค่าอาหาร",
+                                       "การเดินทาง",
+                                       "ค่าโทรศัพท์มือถือ",
+                                       "ค่าไฟ",
+                                       "ค่าน้ำ",
+                                       "สุขภาพ",
+                                       "ค่าอินเทอร์เน็ตหอ"]
+}
+
 extension TransferVC {
     func getImage(name: Int) -> UIImage {
-        switch name {
-        case 0:
-            return UIImage(named: "foodImage") ?? UIImage()
-        case 1:
-            return UIImage(named: "carImage") ?? UIImage()
-        case 2:
-            return UIImage(named: "mobileImage") ?? UIImage()
-        case 3:
-            return UIImage(named: "fireImage") ?? UIImage()
-        case 4 :
-            return UIImage(named: "waterImage") ?? UIImage()
-        case 5:
-            return UIImage(named: "drugImage") ?? UIImage()
-        case 6:
-            return UIImage(named: "internetImage") ?? UIImage()
-        default:
-            return UIImage()
-        }
+        return UIImage(named: ListTransfer().listItem[name]) ?? UIImage()
     }
     
     func getName(name: Int) -> String {
-        switch name {
-        case 0:
-            return "ค่าอาหาร"
-        case 1:
-            return "การเดินทาง"
-        case 2:
-            return "ค่าโทรศัพท์มือถือ"
-        case 3:
-            return "ค่าไฟ"
-        case 4 :
-            return "ค่าน้ำ"
-        case 5:
-            return "สุขภาพ"
-        case 6:
-            return "ค่าอินเทอร์เน็ตหอ"
-        default:
-            return ""
-        }
+        return ListTransfer().valueListTransfer[name]
     }
 }
 

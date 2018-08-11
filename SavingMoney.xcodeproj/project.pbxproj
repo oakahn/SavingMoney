@@ -67,6 +67,7 @@
 		9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31A20C5532F00908D95 /* SplashScreen.swift */; };
 		9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */; };
 		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
+		9CC86A8D211EF5C1000B2356 /* CornerUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		9C61E31A20C5532F00908D95 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerUiView.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -281,6 +283,7 @@
 			children = (
 				9C5E8FE320C14ED8004BFC63 /* CornerButton.swift */,
 				9C5E8FDF20C148B7004BFC63 /* CornerView.swift */,
+				9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				9C5E8FFA20C154EE004BFC63 /* Alert.swift in Sources */,
 				9C61E30C20C4E32C00908D95 /* DesignTableViewCell.swift in Sources */,
 				9C08F48F20C1A45C007E931B /* StartAppRouter.swift in Sources */,
+				9CC86A8D211EF5C1000B2356 /* CornerUiView.swift in Sources */,
 				9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */,
 				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
 				9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */,

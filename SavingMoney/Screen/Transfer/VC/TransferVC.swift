@@ -29,6 +29,9 @@ class TransferVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         isHideTitle = false
+        overrideBackButton()
+        title = "List Transfer"
+        setTitleColor(font: UIFont.kanitRegular10, color: UIColor.purple)
     }
     
     func setup() {

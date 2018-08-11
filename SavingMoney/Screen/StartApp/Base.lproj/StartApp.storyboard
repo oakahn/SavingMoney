@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kanit-Light.ttf">
+            <string>Kanit-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Saving-->
         <scene sceneID="tne-QT-ifu">
@@ -22,7 +27,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-If-nMu">
                                 <rect key="frame" x="14.5" y="13.5" width="291" height="541"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTe-2H-Yre">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTe-2H-Yre" customClass="CornerUiView" customModule="SavingMoney" customModuleProvider="target">
                                         <rect key="frame" x="20" y="40" width="251" height="210.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isv-uS-PSd" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
@@ -35,14 +40,14 @@
                                                     <action selector="redirectToTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ1-fw-wR3"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A17-rX-f5m">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Transfer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="A17-rX-f5m">
                                                 <rect key="frame" x="75" y="170.5" width="101" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.91721409559249878" green="0.8072364330291748" blue="0.86274433135986328" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="isv-uS-PSd" firstAttribute="top" secondItem="PTe-2H-Yre" secondAttribute="top" id="2uh-oV-5NO"/>
                                             <constraint firstAttribute="trailing" secondItem="isv-uS-PSd" secondAttribute="trailing" constant="60" id="Bsz-xM-3HT"/>
@@ -54,7 +59,7 @@
                                             <constraint firstItem="A17-rX-f5m" firstAttribute="leading" secondItem="PTe-2H-Yre" secondAttribute="leading" constant="75" id="xtK-OQ-sIK"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-hS-ox4">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-hS-ox4" customClass="CornerUiView" customModule="SavingMoney" customModuleProvider="target">
                                         <rect key="frame" x="20" y="290.5" width="251" height="210.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-Jz-slF" customClass="CornerButton" customModule="SavingMoney" customModuleProvider="target">
@@ -67,14 +72,14 @@
                                                     <action selector="redirectToHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTA-PC-b7N"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-EQ-gSA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-EQ-gSA">
                                                 <rect key="frame" x="75" y="170.5" width="101" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Kanit-Light" family="Kanit" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.91721409559249878" green="0.8072364330291748" blue="0.86274433135986328" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="psk-Jz-slF" firstAttribute="top" secondItem="Vyn-hS-ox4" secondAttribute="top" id="4dm-6y-7wH"/>
                                             <constraint firstAttribute="bottom" secondItem="MzJ-EQ-gSA" secondAttribute="bottom" constant="5" id="8wJ-4p-Lqp"/>

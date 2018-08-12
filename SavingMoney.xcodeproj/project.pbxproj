@@ -16,7 +16,6 @@
 		9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48A20C1A1FB007E931B /* TransferVC.swift */; };
 		9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48C20C1A24F007E931B /* TransferPresenter.swift */; };
 		9C08F48F20C1A45C007E931B /* StartAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48E20C1A45C007E931B /* StartAppRouter.swift */; };
-		9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */; };
 		9C0EFD4C20C599DC00C556D7 /* Kanit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3920C599DC00C556D7 /* Kanit-ExtraLight.ttf */; };
 		9C0EFD4D20C599DC00C556D7 /* Kanit-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3A20C599DC00C556D7 /* Kanit-ThinItalic.ttf */; };
 		9C0EFD4E20C599DC00C556D7 /* Kanit-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD3B20C599DC00C556D7 /* Kanit-BoldItalic.ttf */; };
@@ -38,7 +37,6 @@
 		9C0EFD5E20C599DC00C556D7 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */; };
 		9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */; };
 		9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */; };
-		9C27FA8920CD4981000257EE /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8820CD4981000257EE /* HistoryModel.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
 		9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* StartApp.swift */; };
 		9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */; };
@@ -87,7 +85,6 @@
 		9C08F48A20C1A1FB007E931B /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
 		9C08F48C20C1A24F007E931B /* TransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenter.swift; sourceTree = "<group>"; };
 		9C08F48E20C1A45C007E931B /* StartAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppRouter.swift; sourceTree = "<group>"; };
-		9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDatabase.swift; sourceTree = "<group>"; };
 		9C0EFD3920C599DC00C556D7 /* Kanit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLight.ttf"; sourceTree = "<group>"; };
 		9C0EFD3A20C599DC00C556D7 /* Kanit-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ThinItalic.ttf"; sourceTree = "<group>"; };
 		9C0EFD3B20C599DC00C556D7 /* Kanit-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -109,7 +106,6 @@
 		9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferPresenter.swift; sourceTree = "<group>"; };
 		9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferRouter.swift; sourceTree = "<group>"; };
-		9C27FA8820CD4981000257EE /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E8FCF20C13C86004BFC63 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
@@ -215,15 +211,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		9C0D290D20CA49EA003585B0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				9C0D290E20CA4A0A003585B0 /* MapDatabase.swift */,
-				9C27FA8820CD4981000257EE /* HistoryModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		9C0EFD3820C599DC00C556D7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +258,6 @@
 		9C5E8FCC20C13C86004BFC63 /* SavingMoney */ = {
 			isa = PBXGroup;
 			children = (
-				9C0D290D20CA49EA003585B0 /* Model */,
 				9C0EFD3820C599DC00C556D7 /* Fonts */,
 				9C5E8FFB20C15524004BFC63 /* Extension */,
 				9C5E8FF420C1548D004BFC63 /* Base */,
@@ -644,7 +630,6 @@
 				9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */,
 				9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
-				9C27FA8920CD4981000257EE /* HistoryModel.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
@@ -655,7 +640,6 @@
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */,
 				9CC86A8F211F2F15000B2356 /* Color.swift in Sources */,
-				9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,
 				9C61E30920C4E1BF00908D95 /* ListTransferCell.swift in Sources */,
 				9C61E30320C4DC8E00908D95 /* HistoryPresenter.swift in Sources */,

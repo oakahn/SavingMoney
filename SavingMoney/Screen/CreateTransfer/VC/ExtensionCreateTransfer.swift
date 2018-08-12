@@ -37,6 +37,7 @@ extension CreateTransferVC {
         amountText.inputAccessoryView = submitButtonView
         noteText.inputAccessoryView = submitButtonView
         submitButtonView?.submitButton.addTarget(self, action: #selector(submitTransfers), for: .touchUpInside)
+        setEnableButton()
     }
 }
 

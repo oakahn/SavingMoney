@@ -1,13 +1,4 @@
-//
-//  CreateTransferPresenter.swift
-//  SavingMoney
-//
-//  Created by chayarak on 10/6/2561 BE.
-//  Copyright © 2561 chayarak. All rights reserved.
-//
-
-import Foundation
-import ObjectMapper
+import UIKit
 
 protocol CreateTransferPresenterProtocol {
     func submitTransfer(title: String, amount: String, type: String)

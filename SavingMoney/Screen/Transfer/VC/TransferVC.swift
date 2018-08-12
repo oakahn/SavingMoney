@@ -25,13 +25,14 @@ class TransferVC: BaseVC {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        listTransferTableView.backgroundColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
         isHideTitle = false
         overrideBackButton()
         title = "List Transfer"
-        setTitleColor(font: UIFont.kanitRegular10, color: UIColor.purple)
+        setTitleColor(font: UIFont.kanitRegular10, color: UIColor.pinkTheme)
     }
     
     func setup() {

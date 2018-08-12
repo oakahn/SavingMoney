@@ -25,7 +25,10 @@ class HistoryVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        isHideTitle = false
+        isHideTitle = true
+        overrideBackButton()
+        title = "History"
+        setTitleColor(font: UIFont.kanitH8LightStyle, color: UIColor.pinkTheme)
     }
 }
 

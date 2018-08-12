@@ -69,6 +69,9 @@
 		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
 		9CC86A8D211EF5C1000B2356 /* CornerUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */; };
 		9CC86A8F211F2F15000B2356 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A8E211F2F15000B2356 /* Color.swift */; };
+		9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A9021204C12000B2356 /* SubmitButtonView.swift */; };
+		9CC86A9321204C1A000B2356 /* SubmitButtonKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */; };
+		9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +142,9 @@
 		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerUiView.swift; sourceTree = "<group>"; };
 		9CC86A8E211F2F15000B2356 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9CC86A9021204C12000B2356 /* SubmitButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitButtonView.swift; sourceTree = "<group>"; };
+		9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitButtonKeyboardView.xib; sourceTree = "<group>"; };
+		9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCreateTransfer.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -367,6 +373,8 @@
 				9C04BDB920C175DD00071802 /* BasePresenter.swift */,
 				9C04BDBB20C176C900071802 /* ScreenError.swift */,
 				9C04BDBD20C177D500071802 /* BaseRouter.swift */,
+				9CC86A9021204C12000B2356 /* SubmitButtonView.swift */,
+				9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -413,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				9C61E31320C5224900908D95 /* CreateTransferVC.swift */,
+				9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -536,6 +545,7 @@
 				9C5E8FEF20C15348004BFC63 /* History.storyboard in Resources */,
 				9C0EFD5720C599DC00C556D7 /* Kanit-Bold.ttf in Resources */,
 				9C0EFD5020C599DC00C556D7 /* Kanit-Black.ttf in Resources */,
+				9CC86A9321204C1A000B2356 /* SubmitButtonKeyboardView.xib in Resources */,
 				9C0EFD5620C599DC00C556D7 /* Kanit-ExtraBold.ttf in Resources */,
 				9C0EFD5520C599DC00C556D7 /* Kanit-ExtraBoldItalic.ttf in Resources */,
 				9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */,
@@ -641,7 +651,9 @@
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
+				9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
+				9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */,
 				9CC86A8F211F2F15000B2356 /* Color.swift in Sources */,
 				9C0D290F20CA4A0A003585B0 /* MapDatabase.swift in Sources */,
 				9C5E900720C15AB5004BFC63 /* LoadingXibView.swift in Sources */,

@@ -21,10 +21,13 @@ class CreateTransferVC: BaseVC {
     @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
     lazy var presenter = CreateTransferPersenter(self)
+    var submitButtonView: SubmitButtonKeyboardView?
+    var type: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideBackButton()
+        setupKeyboard()
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,42 +36,21 @@ class CreateTransferVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         setup()
-    }
-    
-    func setup() {
-        noteText.becomeFirstResponder()
-        noteText.text = caseTransfer
-        noteLabel.text = "รายละเอียดที่จ่าย"
-        noteLabel.font = UIFont.kanitH8MediumStyle
+        setUpOutCome()
     }
     
     @IBAction func incomeOrOutcome(_ sender: Any) {
-        let incomeOrOutcomeCase = inoutSegment.selectedSegmentIndex
-        switch incomeOrOutcomeCase {
+        switch inoutSegment.selectedSegmentIndex {
         case 0:
             setUpOutCome()
         case 1:
             setupIncome()
         default:
-            return
+            setUpOutCome()
         }
     }
     
-    func setUpOutCome() {
-        noteLabel.text = "รายละเอียดที่จ่าย"
-        amountLabel.text = "จ่ายจำนวนเงิน"
+    @objc func submitTransfers() {
+        presenter.submitTransfer(title: noteText.text ?? "", amount: amountText.text ?? "", type: type)
     }
-    
-    func setupIncome() {
-        noteLabel.text = "รายละเอียดที่รับ"
-        amountLabel.text = "รับจำนวนเงิน"
-    }
-    
-    @IBAction func submitTransfer(_ sender: Any) {
-        presenter.submitTransfer(title: noteText.text ?? "", message: amountText.text ?? "")
-    }
-}
-
-extension CreateTransferVC: CreateTransferVCProtocol {
-    
 }

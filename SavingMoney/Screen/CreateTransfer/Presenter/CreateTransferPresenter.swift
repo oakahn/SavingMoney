@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 protocol CreateTransferPresenterProtocol {
-    func submitTransfer(title: String, message: String)
+    func submitTransfer(title: String, amount: String, type: String)
 }
 
 class CreateTransferPersenter {
@@ -23,8 +23,7 @@ class CreateTransferPersenter {
 }
 
 extension CreateTransferPersenter: CreateTransferPresenterProtocol {
-    
-    func submitTransfer(title: String, message: String) {
+    func submitTransfer(title: String, amount: String, type: String) {
         
     }
 }

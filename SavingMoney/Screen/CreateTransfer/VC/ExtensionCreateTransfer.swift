@@ -6,7 +6,7 @@ extension CreateTransferVC {
         noteText.becomeFirstResponder()
         noteText.text = caseTransfer
         noteLabel.font = UIFont.kanitH8MediumStyle
-        title = DateFormatComponent().getCurrentDate(destinationPattern: .fullDateTimeTH)
+        title = dateTimeNow
         amountText.delegate = self
     }
     
@@ -44,5 +44,8 @@ extension CreateTransferVC {
 }
 
 extension CreateTransferVC: CreateTransferVCProtocol {
-    
+    func redirectToSlipVC() {
+        hideLoading()
+        router.redirectToSlipVC()
+    }
 }

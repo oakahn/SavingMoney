@@ -36,6 +36,8 @@
 		9C0EFD5D20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4A20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf */; };
 		9C0EFD5E20C599DC00C556D7 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */; };
 		9C14669C2121400D0006C3E7 /* DateFormatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */; };
+		9C1466A22121AD040006C3E7 /* Slip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466A12121AD040006C3E7 /* Slip.storyboard */; };
+		9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466A32121AD120006C3E7 /* SlipVC.swift */; };
 		9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */; };
 		9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
@@ -106,6 +108,8 @@
 		9C0EFD4A20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
 		9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatComponent.swift; sourceTree = "<group>"; };
+		9C1466A12121AD040006C3E7 /* Slip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slip.storyboard; sourceTree = "<group>"; };
+		9C1466A32121AD120006C3E7 /* SlipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipVC.swift; sourceTree = "<group>"; };
 		9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferPresenter.swift; sourceTree = "<group>"; };
 		9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferRouter.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +243,39 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		9C14669D2121ACD80006C3E7 /* Slip */ = {
+			isa = PBXGroup;
+			children = (
+				9C1466A02121ACF60006C3E7 /* Router */,
+				9C14669F2121ACF00006C3E7 /* Presenter */,
+				9C14669E2121ACEA0006C3E7 /* VC */,
+				9C1466A12121AD040006C3E7 /* Slip.storyboard */,
+			);
+			path = Slip;
+			sourceTree = "<group>";
+		};
+		9C14669E2121ACEA0006C3E7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C1466A32121AD120006C3E7 /* SlipVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C14669F2121ACF00006C3E7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C1466A02121ACF60006C3E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		9C5E8FC120C13C86004BFC63 = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +324,7 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C14669D2121ACD80006C3E7 /* Slip */,
 				9C61E31720C5529A00908D95 /* SplashScreen */,
 				9C61E30F20C5221C00908D95 /* CreateTransfer */,
 				9C08F48420C1A19D007E931B /* Transfer */,
@@ -510,6 +548,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1466A22121AD040006C3E7 /* Slip.storyboard in Resources */,
 				9C0EFD4C20C599DC00C556D7 /* Kanit-ExtraLight.ttf in Resources */,
 				9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */,
 				9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */,
@@ -640,6 +679,7 @@
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */,
+				9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */,
 				9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */,
 				9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */,
 				9CC86A8F211F2F15000B2356 /* Color.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CreateTransferVCProtocol: BaseVCProtocol {
-    
+    func redirectToSlipVC()
 }
 
 class CreateTransferVC: BaseVC {
@@ -21,9 +21,11 @@ class CreateTransferVC: BaseVC {
     @IBOutlet weak var inoutSegment: UISegmentedControl!
     var caseTransfer: String?
     lazy var presenter = CreateTransferPersenter(self)
+    lazy var router = CreateTransferRouter(self)
     var submitButtonView: SubmitButtonKeyboardView?
     var type: String = ""
     let maxInputAmount = NSNumber(value:9999.99)
+    var dateTimeNow: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,7 @@ class CreateTransferVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        dateTimeNow = DateFormatComponent().getCurrentDate(destinationPattern: .fullDateTimeTH)
         setup()
         setUpOutCome()
     }
@@ -52,7 +55,10 @@ class CreateTransferVC: BaseVC {
     }
     
     @objc func submitTransfers() {
-        presenter.submitTransfer(title: noteText.text ?? "", amount: amountText.text ?? "", type: type)
+        displayLoading(message: "", hasBg: true)
+        noteText.resignFirstResponder()
+        amountText.resignFirstResponder()
+        presenter.submitTransfer(dateKey: dateTimeNow, title: noteText.text ?? "", amount: amountText.text ?? "", type: type)
     }
 }
 

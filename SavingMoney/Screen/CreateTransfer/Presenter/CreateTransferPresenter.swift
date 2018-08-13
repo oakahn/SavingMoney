@@ -10,6 +10,7 @@ class CreateTransferPersenter {
 
     var view: CreateTransferVCProtocol?
     var dbReference: DatabaseReference?
+    var postsKeys = [String]()
     
     init(_ view: CreateTransferVCProtocol) {
         self.view = view
@@ -19,14 +20,10 @@ class CreateTransferPersenter {
 
 extension CreateTransferPersenter: CreateTransferPresenterProtocol {
     func submitTransfer(title: String, amount: String, type: String) {
-        let childListItem = ["CaptionAmerica", "Ironman", "Hulk", "TheFlash",
-                             "Thor", "Spiderman1"]
-        for item in childListItem{
-            guard let index = childListItem.index(of: item) else {
-                return
-            }
-            let listItem = String(index)
-            dbReference?.child("Human2").child(listItem).setValue(item)
-        }
+        dbReference?.child("superman").child("batman").observeSingleEvent(of: .value, with: { (snapshot) in
+            guard var dictionary = snapshot.value as? [String] else { return }
+            dictionary.append("cherprang")
+            self.dbReference?.child("superman").child("batman").setValue(dictionary)
+        })
     }
 }

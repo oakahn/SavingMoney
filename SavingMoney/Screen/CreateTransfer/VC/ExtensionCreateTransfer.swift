@@ -6,6 +6,8 @@ extension CreateTransferVC {
         noteText.becomeFirstResponder()
         noteText.text = caseTransfer
         noteLabel.font = UIFont.kanitH8MediumStyle
+        title = DateFormatComponent().getCurrentDate(destinationPattern: .fullDateTimeTH)
+        amountText.delegate = self
     }
     
     func setEnableButton() {

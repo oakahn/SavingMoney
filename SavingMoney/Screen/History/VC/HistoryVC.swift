@@ -28,7 +28,7 @@ class HistoryVC: BaseVC {
         isHideTitle = true
         overrideBackButton()
         title = "History"
-        setTitleColor(font: UIFont.kanitH8LightStyle, color: UIColor.pinkTheme)
+        setTitleColor(font: UIFont.kanitH8BoldStyle, color: UIColor.pinkTheme)
     }
 }
 

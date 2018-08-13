@@ -23,6 +23,7 @@ class CreateTransferVC: BaseVC {
     lazy var presenter = CreateTransferPersenter(self)
     var submitButtonView: SubmitButtonKeyboardView?
     var type: String = ""
+    let maxInputAmount = NSNumber(value:9999.99)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,5 +53,19 @@ class CreateTransferVC: BaseVC {
     
     @objc func submitTransfers() {
         presenter.submitTransfer(title: noteText.text ?? "", amount: amountText.text ?? "", type: type)
+    }
+}
+
+extension CreateTransferVC: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let textfield = textField.text else { return false }
+        if textfield.isEmpty { return true }
+        if textfield == "." && textfield.isEmpty { return false }
+        guard let amountValue = Double(textfield) else { return false }
+        if amountValue > maxInputAmount.doubleValue {
+            amountText.text?.removeLast()
+            return false
+        }
+        return true
     }
 }

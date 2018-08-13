@@ -32,7 +32,7 @@ class TransferVC: BaseVC {
         isHideTitle = false
         overrideBackButton()
         title = "List Transfer"
-        setTitleColor(font: UIFont.kanitH8LightStyle, color: UIColor.pinkTheme)
+        setTitleColor(font: UIFont.kanitH8BoldStyle, color: UIColor.pinkTheme)
     }
     
     func setup() {

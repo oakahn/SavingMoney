@@ -24,6 +24,10 @@ class SlipVC: BaseVC {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        isHideTitle = true
+    }
 }
 
 extension SlipVC: SlipVCProtocol {

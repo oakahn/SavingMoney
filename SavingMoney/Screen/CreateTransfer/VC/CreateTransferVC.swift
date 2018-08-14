@@ -58,7 +58,10 @@ class CreateTransferVC: BaseVC {
         displayLoading(message: "", hasBg: true)
         noteText.resignFirstResponder()
         amountText.resignFirstResponder()
-        presenter.submitTransfer(dateKey: dateTimeNow, title: noteText.text ?? "", amount: amountText.text ?? "", type: type)
+        presenter.submitTransfer(dateKey: dateTimeNow,
+                                 title: noteText.text ?? "",
+                                 amount: amountText.text ?? "",
+                                 type: type)
     }
 }
 

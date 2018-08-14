@@ -12,6 +12,8 @@
 		9C04BDBA20C175DD00071802 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDB920C175DD00071802 /* BasePresenter.swift */; };
 		9C04BDBC20C176C900071802 /* ScreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDBB20C176C900071802 /* ScreenError.swift */; };
 		9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04BDBD20C177D500071802 /* BaseRouter.swift */; };
+		9C07BEF921231F1F00EB1995 /* ExtensionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07BEF821231F1F00EB1995 /* ExtensionPresenter.swift */; };
+		9C07BEFC2123211C00EB1995 /* HistoetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07BEFB2123211C00EB1995 /* HistoetModel.swift */; };
 		9C08F48620C1A1C4007E931B /* Transfer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C08F48520C1A1C4007E931B /* Transfer.storyboard */; };
 		9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48A20C1A1FB007E931B /* TransferVC.swift */; };
 		9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C08F48C20C1A24F007E931B /* TransferPresenter.swift */; };
@@ -85,6 +87,8 @@
 		9C04BDB920C175DD00071802 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		9C04BDBB20C176C900071802 /* ScreenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenError.swift; sourceTree = "<group>"; };
 		9C04BDBD20C177D500071802 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		9C07BEF821231F1F00EB1995 /* ExtensionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPresenter.swift; sourceTree = "<group>"; };
+		9C07BEFB2123211C00EB1995 /* HistoetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoetModel.swift; sourceTree = "<group>"; };
 		9C08F48520C1A1C4007E931B /* Transfer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transfer.storyboard; sourceTree = "<group>"; };
 		9C08F48A20C1A1FB007E931B /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
 		9C08F48C20C1A24F007E931B /* TransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPresenter.swift; sourceTree = "<group>"; };
@@ -179,6 +183,14 @@
 				9C04BDB720C1756B00071802 /* StartAppPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C07BEFA212320EA00EB1995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C07BEFB2123211C00EB1995 /* HistoetModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9C08F48420C1A19D007E931B /* Transfer */ = {
@@ -374,6 +386,7 @@
 		9C5E8FEB20C15314004BFC63 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				9C07BEFA212320EA00EB1995 /* Model */,
 				9C61E30120C4DC7900908D95 /* Presenter */,
 				9C5E8FED20C15328004BFC63 /* Router */,
 				9C5E8FEC20C15320004BFC63 /* VC */,
@@ -412,6 +425,7 @@
 				9C04BDBD20C177D500071802 /* BaseRouter.swift */,
 				9CC86A9021204C12000B2356 /* SubmitButtonView.swift */,
 				9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */,
+				9C07BEF821231F1F00EB1995 /* ExtensionPresenter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -688,6 +702,7 @@
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
 				9C12D4BF2122BA5D00F91CB5 /* InsertModel.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
+				9C07BEF921231F1F00EB1995 /* ExtensionPresenter.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
@@ -706,6 +721,7 @@
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
 				9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */,
 				9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */,
+				9C07BEFC2123211C00EB1995 /* HistoetModel.swift in Sources */,
 				9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */,
 				9C61E30520C4DEC600908D95 /* TransferRouter.swift in Sources */,
 				9C61E30720C4DF2500908D95 /* HistoryRouter.swift in Sources */,

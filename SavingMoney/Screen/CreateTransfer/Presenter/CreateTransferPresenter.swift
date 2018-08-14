@@ -16,16 +16,11 @@ class CreateTransferPersenter {
         self.view = view
         dbReference = Database.database().reference()
     }
-    
-    func cutDateTime(date: String) -> [String] {
-        let date: [String] = date.components(separatedBy: " ")
-        return [date[0], date[1]]
-    }
 }
 
 extension CreateTransferPersenter: CreateTransferPresenterProtocol {
     func submitTransfer(dateKey: String, title: String, amount: String, type: String) {
-        let dateKeys = self.cutDateTime(date: dateKey)[0]
+        let dateKeys = ExtensionPresenter().cutDateTime(date: dateKey)[0]
         dbReference?.child("Oak").child(dateKeys).observeSingleEvent(of: .value, with: { (snapshot) in
             let dic = snapshot.value as? [String]
             if (dic == nil) {

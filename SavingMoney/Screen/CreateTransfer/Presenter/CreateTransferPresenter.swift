@@ -25,11 +25,16 @@ class CreateTransferPersenter {
 
 extension CreateTransferPersenter: CreateTransferPresenterProtocol {
     func submitTransfer(dateKey: String, title: String, amount: String, type: String) {
-        dbReference?.child("Oak").observeSingleEvent(of: .value, with: { (snapshot) in
-            guard var dictionary = snapshot.value as? [String] else {
+        let dateKeys = self.cutDateTime(date: dateKey)[0]
+        dbReference?.child("Oak").child(dateKeys).observeSingleEvent(of: .value, with: { (snapshot) in
+            let dic = snapshot.value as? [String]
+            if (dic == nil) {
+                let data: [String] = [(title + "|" + amount + "|" + type)]
+                self.dbReference?.child("Oak").child(dateKeys).setValue(data)
+                self.submitSuccess()
                 return
             }
-            let dateKeys = self.cutDateTime(date: dateKey)[0]
+            guard var dictionary = snapshot.value as? [String] else { return }
             dictionary.append(title + "|" + amount + "|" + type)
             self.dbReference?.child("Oak").child(dateKeys).setValue(dictionary)
             self.submitSuccess()

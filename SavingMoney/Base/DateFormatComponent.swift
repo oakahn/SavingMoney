@@ -2,7 +2,7 @@ import Foundation
 
 enum DateFormat: String {
     case ddmmyyyy = "dd/MM/yyyy"
-    case fullDateTimeTH = "dd/MM/yyyy HH:mm:ss"
+    case fullDateTimeTH = "dd-MM-yyyy HH:mm:ss"
     case serviceDateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
     case receipt = "dd MMMM yyyy - HH:mm:ss น."
     case home = "dd MMMM yyyy"

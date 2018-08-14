@@ -11,6 +11,9 @@ PODS:
   - BoringSSL/Implementation (10.0.2):
     - BoringSSL/Interface (= 10.0.2)
   - BoringSSL/Interface (10.0.2)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - Firebase/Auth (5.0.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.0)
@@ -95,6 +98,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage (~> 3.3)
   - AlamofireObjectMapper (~> 5.0)
+  - Charts
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -110,6 +114,7 @@ SPEC REPOS:
     - AlamofireImage
     - AlamofireObjectMapper
     - BoringSSL
+    - Charts
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -136,6 +141,7 @@ SPEC CHECKSUMS:
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
   BoringSSL: 60dd24df4af296bf41d78e5841dbb95d75f88c0d
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Firebase: 4bd804448ab2596794698773d41520a0af101e65
   FirebaseAnalytics: 19812b49fa5f283dd6b23edf8a14b5d477029ab8
   FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
@@ -157,6 +163,6 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 85de2d213318d0b38b056f08505e0d929d0ea189
+PODFILE CHECKSUM: bc5105ebf060203b2f259959f0d51b1debd6d9bb
 
 COCOAPODS: 1.5.0

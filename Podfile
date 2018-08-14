@@ -17,5 +17,6 @@ target 'SavingMoney' do
   	pod 'AlamofireImage', '~> 3.3'
   	pod 'ObjectMapper', '~> 3.1'
   	pod 'AlamofireObjectMapper', '~> 5.0'
+	pod 'Charts'
 
 end

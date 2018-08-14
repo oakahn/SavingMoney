@@ -35,6 +35,7 @@
 		9C0EFD5C20C599DC00C556D7 /* Kanit-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4920C599DC00C556D7 /* Kanit-LightItalic.ttf */; };
 		9C0EFD5D20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4A20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf */; };
 		9C0EFD5E20C599DC00C556D7 /* Kanit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */; };
+		9C12D4BF2122BA5D00F91CB5 /* InsertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12D4BE2122BA5D00F91CB5 /* InsertModel.swift */; };
 		9C14669C2121400D0006C3E7 /* DateFormatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */; };
 		9C1466A22121AD040006C3E7 /* Slip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466A12121AD040006C3E7 /* Slip.storyboard */; };
 		9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466A32121AD120006C3E7 /* SlipVC.swift */; };
@@ -107,6 +108,7 @@
 		9C0EFD4920C599DC00C556D7 /* Kanit-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-LightItalic.ttf"; sourceTree = "<group>"; };
 		9C0EFD4A20C599DC00C556D7 /* Kanit-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Medium.ttf"; sourceTree = "<group>"; };
+		9C12D4BE2122BA5D00F91CB5 /* InsertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertModel.swift; sourceTree = "<group>"; };
 		9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatComponent.swift; sourceTree = "<group>"; };
 		9C1466A12121AD040006C3E7 /* Slip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slip.storyboard; sourceTree = "<group>"; };
 		9C1466A32121AD120006C3E7 /* SlipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipVC.swift; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 				9C0EFD4B20C599DC00C556D7 /* Kanit-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9C12D4BD2122BA4900F91CB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C12D4BE2122BA5D00F91CB5 /* InsertModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9C14669D2121ACD80006C3E7 /* Slip */ = {
@@ -436,6 +446,7 @@
 		9C61E30F20C5221C00908D95 /* CreateTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				9C12D4BD2122BA4900F91CB5 /* Model */,
 				9C61E31220C5223600908D95 /* Router */,
 				9C61E31120C5223000908D95 /* Presenter */,
 				9C61E31020C5222B00908D95 /* VC */,
@@ -595,6 +606,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -615,6 +627,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -673,6 +686,7 @@
 				9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
+				9C12D4BF2122BA5D00F91CB5 /* InsertModel.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,

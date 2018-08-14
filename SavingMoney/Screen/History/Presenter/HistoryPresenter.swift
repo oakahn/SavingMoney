@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 import Firebase
 import FirebaseDatabase
+import ObjectMapper
 
 protocol HistoryPresenterProtocol {
     func getHistory()
@@ -28,19 +29,11 @@ class HistoryPresenter {
 extension HistoryPresenter: HistoryPresenterProtocol {
     func getHistory() {
         dbReference?.child("Oak").observeSingleEvent(of: .value, with: { (snapshot) in
-//            let dic = snapshot.value as? String
-            print(snapshot.value)
-//            if (dic == nil) {
-//                print("NO History")
-//                return
-//            }
-//            let dic2 = dic?.values
-//            if dic2 == nil {
-//                print("NO value2")
-//                return
-//            }
-//            guard let data = snapshot.value as? [String] else { return }
-//            print(data)
+            guard let res = snapshot.value as? NSObject else { return }
+            guard let detail = Mapper<HistoryModel>().map(JSONObject: res) else { return }
+            guard let payTotal = detail.payTotal,
+                let receiveTotal = detail.receiveTotal else { return }
+            print(payTotal, receiveTotal)
         })
     }
 }

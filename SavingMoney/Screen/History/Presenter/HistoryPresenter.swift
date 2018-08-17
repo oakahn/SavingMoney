@@ -34,6 +34,7 @@ extension HistoryPresenter: HistoryPresenterProtocol {
             guard let payTotal = detail.payTotal,
                 let receiveTotal = detail.receiveTotal else { return }
             print(payTotal, receiveTotal)
+            self.view?.getHistorySuccess()
         })
     }
 }

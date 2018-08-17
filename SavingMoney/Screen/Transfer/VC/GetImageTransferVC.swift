@@ -25,6 +25,13 @@ struct ListTransfer {
                                        "ค่าน้ำ",
                                        "สุขภาพ",
                                        "ค่าอินเทอร์เน็ตหอ"]
+    let keyChild: [String] = ["food",
+                              "car",
+                              "mobile",
+                              "fire",
+                              "water",
+                              "health",
+                              "internet"]
 }
 
 extension TransferVC {
@@ -33,7 +40,7 @@ extension TransferVC {
     }
     
     func getName(name: Int) -> String {
-        return ListTransfer().valueListTransfer[name]
+        return ListTransfer().keyChild[name]
     }
 }
 

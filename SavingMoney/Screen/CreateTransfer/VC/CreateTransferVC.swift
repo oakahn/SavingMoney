@@ -26,6 +26,7 @@ class CreateTransferVC: BaseVC {
     var type: String = ""
     let maxInputAmount = NSNumber(value:9999.99)
     var dateTimeNow: String = ""
+    var catagory: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,10 +59,11 @@ class CreateTransferVC: BaseVC {
         displayLoading(message: "", hasBg: true)
         noteText.resignFirstResponder()
         amountText.resignFirstResponder()
-        presenter.submitTransfer(dateKey: dateTimeNow,
-                                 title: noteText.text ?? "",
-                                 amount: amountText.text ?? "",
-                                 type: type)
+        presenter.submitTransfer(CreateModel(dateKey: dateTimeNow,
+                                             type: type,
+                                             catagory: "",
+                                             amount: amountText.text ?? "",
+                                             desc: noteText.text ?? ""))
     }
 }
 

@@ -10,12 +10,13 @@ import UIKit
 import Charts
 
 protocol HistoryVCProtocol: BaseVCProtocol {
-    
+    func getHistorySuccess()
 }
 
 class HistoryVC: BaseVC, ChartViewDelegate {
     
     lazy var presenter = HistoryPresenter(self)
+    lazy var router = HistoryRouter(self)
     @IBOutlet weak var pieChartView: PieChartView!
     
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     }
     
     func setup() {
-        pieChartView.noDataText = "Superman"
+//        pieChartView.noDataText = "Superman"
         let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
         setChart(dataPoints: months, values: unitsSold)
@@ -56,18 +57,13 @@ class HistoryVC: BaseVC, ChartViewDelegate {
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
         
-        let colors: [UIColor] = [UIColor.chart1,
-                                 UIColor.chart2,
-                                 UIColor.chart3,
-                                 UIColor.chart4,
-                                 UIColor.chart5,
-                                 UIColor.chart6,
-                                 UIColor.chart7,]
-        
+        let colors: [UIColor] = GetColor().color
         pieChartDataSet.colors = colors
     }
 }
 
 extension HistoryVC: HistoryVCProtocol {
-    
+    func getHistorySuccess() {
+        
+    }
 }

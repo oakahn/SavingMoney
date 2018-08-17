@@ -3,40 +3,67 @@ import Firebase
 import FirebaseDatabase
 
 protocol CreateTransferPresenterProtocol {
-    func submitTransfer(dateKey: String, title: String, amount: String, type: String)
+    func submitTransfer(_ createModel: CreateModel)
+    func setupModel(_ model: HistoryModel)
 }
 
 class CreateTransferPersenter {
 
     var view: CreateTransferVCProtocol?
     var dbReference: DatabaseReference?
-    var postsKeys = [String]()
     
     init(_ view: CreateTransferVCProtocol) {
         self.view = view
-        dbReference = Database.database().reference()
+        dbReference = Database.database().reference().child("Oak")
     }
 }
 
 extension CreateTransferPersenter: CreateTransferPresenterProtocol {
-    func submitTransfer(dateKey: String, title: String, amount: String, type: String) {
-        let dateKeys = ExtensionPresenter().cutDateTime(date: dateKey)[0]
-        dbReference?.child("Oak").child(dateKeys).observeSingleEvent(of: .value, with: { (snapshot) in
+    
+    func setupModel(_ model: HistoryModel) {
+        
+    }
+    
+    func submitTransfer(_ createModel: CreateModel) {
+        let dateKeys = ExtensionPresenter().cutDateTime(date: createModel.dateKey)[0]
+        dbReference?.child(dateKeys).observeSingleEvent(of: .value, with: { (snapshot) in
             let dic = snapshot.value as? [String]
             if (dic == nil) {
-                let data: [String] = [(title + "|" + amount + "|" + type)]
-                self.dbReference?.child("Oak").child(dateKeys).setValue(data)
-                self.submitSuccess()
+                let data: [String] = [self.createInsert(createModel)]
+                self.dbReference?.child(dateKeys).setValue(data)
+                self.updateValueFirebase()
                 return
             }
             guard var dictionary = snapshot.value as? [String] else { return }
-            dictionary.append(title + "|" + amount + "|" + type)
-            self.dbReference?.child("Oak").child(dateKeys).setValue(dictionary)
-            self.submitSuccess()
+            dictionary.append(self.createInsert(createModel))
+            self.dbReference?.child(dateKeys).setValue(dictionary)
+            self.updateValueFirebase()
         })
+    }
+}
+
+extension CreateTransferPersenter {
+    
+    func createInsert(_ input: CreateModel) -> String {
+        return input.type + "|" + input.catagory + "|" + input.amount + "|" + input.desc
     }
     
     func submitSuccess() {
         view?.redirectToSlipVC()
+    }
+    
+    func updateValueFirebase() {
+        for i in ListTransfer().keyChild {
+            updateValue(child: i)
+        }
+        self.submitSuccess()
+    }
+    
+    func updateValue(child: String) {
+        dbReference?.child(child).observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let valueChild = snapshot.value as? String else { return }
+            print(valueChild)
+            self.dbReference?.child(child).setValue("0")
+        })
     }
 }

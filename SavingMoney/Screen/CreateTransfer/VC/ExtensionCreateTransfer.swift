@@ -4,7 +4,7 @@ extension CreateTransferVC {
     
     func setup() {
         noteText.becomeFirstResponder()
-        noteText.text = caseTransfer
+        catagory = caseTransfer ?? ""
         noteLabel.font = UIFont.kanitH8MediumStyle
         title = dateTimeNow
         amountText.delegate = self

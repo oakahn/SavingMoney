@@ -24,7 +24,7 @@ class SlipVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        isHideTitle = true
+//        isHideTitle = true
     }
     
     func setup() {

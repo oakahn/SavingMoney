@@ -69,14 +69,14 @@ class CreateTransferVC: BaseVC {
 
 extension CreateTransferVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let textfield = textField.text else { return false }
-        if textfield.isEmpty { return true }
-        if textfield == "." && textfield.isEmpty { return false }
-        guard let amountValue = Double(textfield) else { return false }
-        if amountValue > maxInputAmount.doubleValue {
-            amountText.text?.removeLast()
-            return false
-        }
+//        guard let textfield = textField.text else { return false }
+//        if textfield.isEmpty { return true }
+//        if textfield == "." && textfield.isEmpty { return false }
+//        guard let amountValue = Double(textfield) else { return false }
+//        if amountValue > maxInputAmount.doubleValue {
+//            amountText.text?.removeLast()
+//            return false
+//        }
         return true
     }
 }

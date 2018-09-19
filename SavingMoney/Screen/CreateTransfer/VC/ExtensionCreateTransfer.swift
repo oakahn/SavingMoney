@@ -46,6 +46,10 @@ extension CreateTransferVC {
 extension CreateTransferVC: CreateTransferVCProtocol {
     func redirectToSlipVC() {
         hideLoading()
-        router.redirectToSlipVC()
+        router.redirectToSlipVC(model: SlipModel(amount: amountText.text ?? "",
+                                                 fee: "0",
+                                                 date: dateTimeNow,
+                                                 headerLabel: caseTransfer ?? "",
+                                                 image: image ?? ""))
     }
 }

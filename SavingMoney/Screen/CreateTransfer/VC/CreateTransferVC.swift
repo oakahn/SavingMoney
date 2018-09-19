@@ -27,6 +27,7 @@ class CreateTransferVC: BaseVC {
     let maxInputAmount = NSNumber(value:9999.99)
     var dateTimeNow: String = ""
     var catagory: String = ""
+    var image: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

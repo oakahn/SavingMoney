@@ -64,6 +64,7 @@ extension TransferVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        router.redirectToCreatetransaction(caseTransfer: getName(name: indexPath.row))
+        router.redirectToCreatetransaction(caseTransfer: getName(name: indexPath.row),
+                                           image: ListTransfer().listItem[indexPath.row])
     }
 }

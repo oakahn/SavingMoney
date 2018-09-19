@@ -10,15 +10,16 @@ import Foundation
 import UIKit
 
 protocol TransferRouterProtocol {
-    func redirectToCreatetransaction(caseTransfer: String)
+    func redirectToCreatetransaction(caseTransfer: String, image: String)
 }
 
 class TransferRouter: BaseRouter, TransferRouterProtocol {
-    func redirectToCreatetransaction(caseTransfer: String) {
+    func redirectToCreatetransaction(caseTransfer: String, image: String) {
         guard let createTransaction = getViewController(storyboardName: self.createTransfer) as? CreateTransferVC else {
             return
         }
         createTransaction.caseTransfer = caseTransfer
+        createTransaction.image = image
         redirectTo(viewController: createTransaction)
     }
 }

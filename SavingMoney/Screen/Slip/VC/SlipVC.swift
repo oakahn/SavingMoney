@@ -1,11 +1,3 @@
-//
-//  SlipVC.swift
-//  SavingMoney
-//
-//  Created by chayarak on 13/8/2561 BE.
-//  Copyright © 2561 chayarak. All rights reserved.
-//
-
 import UIKit
 
 protocol SlipVCProtocol: BaseVCProtocol {
@@ -14,11 +6,17 @@ protocol SlipVCProtocol: BaseVCProtocol {
 
 class SlipVC: BaseVC {
     
-    var models: String?
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var feeLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var imageType: UIImageView!
+    @IBOutlet weak var headerLabel: UILabel!
+    var models: SlipModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(models)
+//        print(models)
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,7 +24,15 @@ class SlipVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        isHideTitle = true
+        isHideTitle = true
+    }
+    
+    func setup() {
+        amountLabel.text = models?.amount
+        feeLabel.text = models?.fee
+        dateLabel.text = models?.date
+        imageType.image = UIImage(named: models?.image ?? "")
+        headerLabel.text = models?.headerLabel
     }
 }
 

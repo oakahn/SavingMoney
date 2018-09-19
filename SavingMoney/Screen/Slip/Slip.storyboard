@@ -139,10 +139,17 @@
                         <viewLayoutGuide key="safeArea" id="3WI-BK-kXJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="jNr-m0-ZOJ"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="DaT-Nv-VOz" id="By1-iP-I48"/>
+                        <outlet property="dateLabel" destination="ECc-GG-eQL" id="GDK-Lf-b4V"/>
+                        <outlet property="feeLabel" destination="ZAR-Ak-n9P" id="IcT-c9-md5"/>
+                        <outlet property="headerLabel" destination="Xnn-sq-Wm2" id="Xxm-Q2-xBA"/>
+                        <outlet property="imageType" destination="Sk3-H7-WKN" id="xG2-hK-U4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L8k-uP-aIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926.25" y="109.85915492957747"/>
+            <point key="canvasLocation" x="842" y="71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SGz-l3-4ES">

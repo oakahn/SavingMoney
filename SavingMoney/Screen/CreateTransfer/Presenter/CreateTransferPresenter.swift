@@ -31,13 +31,13 @@ extension CreateTransferPersenter: CreateTransferPresenterProtocol {
             if (dic == nil) {
                 let data: [String] = [self.createInsert(createModel)]
                 self.dbReference?.child(dateKeys).setValue(data)
-                self.updateValueFirebase()
+                self.updateValueFirebase(createModel.catagory)
                 return
             }
             guard var dictionary = snapshot.value as? [String] else { return }
             dictionary.append(self.createInsert(createModel))
             self.dbReference?.child(dateKeys).setValue(dictionary)
-            self.updateValueFirebase()
+            self.updateValueFirebase(createModel.catagory)
         })
     }
 }
@@ -52,18 +52,20 @@ extension CreateTransferPersenter {
         view?.redirectToSlipVC()
     }
     
-    func updateValueFirebase() {
-        for i in ListTransfer().keyChild {
-            updateValue(child: i)
-        }
-        self.submitSuccess()
+    func updateValueFirebase(_ child: String) {
+//        for i in ListTransfer().keyChild {
+//            updateValue(child: i)
+//        }
+        updateValue(child: child)
+//        submitSuccess()
     }
     
     func updateValue(child: String) {
         dbReference?.child(child).observeSingleEvent(of: .value, with: { (snapshot) in
             guard let valueChild = snapshot.value as? String else { return }
-            print(valueChild)
-            self.dbReference?.child(child).setValue("0")
+            guard let valueInt = Int(valueChild) else { return }
+            self.dbReference?.child(child).setValue(String(valueInt + 1))
+            self.submitSuccess()
         })
     }
 }

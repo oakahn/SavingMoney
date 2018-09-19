@@ -62,7 +62,7 @@ class CreateTransferVC: BaseVC {
         amountText.resignFirstResponder()
         presenter.submitTransfer(CreateModel(dateKey: dateTimeNow,
                                              type: type,
-                                             catagory: "",
+                                             catagory: catagory,
                                              amount: amountText.text ?? "",
                                              desc: noteText.text ?? ""))
     }

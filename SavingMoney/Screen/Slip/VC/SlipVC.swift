@@ -12,6 +12,7 @@ class SlipVC: BaseVC {
     @IBOutlet weak var imageType: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     var models: SlipModel?
+    lazy var router = SlipRouter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,11 @@ class SlipVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        isHideTitle = true
+        isHideTitle = true
+    }
+    
+    @IBAction func goTomainPage(_ sender: Any) {
+        router.redirectToMainPage()
     }
     
     func setup() {

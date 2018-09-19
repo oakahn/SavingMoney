@@ -23,14 +23,14 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLi-um-BnT" customClass="PieChartView" customModule="Charts">
-                                        <rect key="frame" x="27" y="63" width="360.33333333333331" height="354"/>
+                                        <rect key="frame" x="27" y="20.666666666666686" width="360.33333333333331" height="354"/>
                                         <color key="backgroundColor" red="0.94064631421643874" green="0.93664356394317738" blue="0.94464906448970021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="qLi-um-BnT" firstAttribute="height" secondItem="tV4-yV-qu4" secondAttribute="height" multiplier="1:1.9" id="6YY-dv-HCv"/>
-                                    <constraint firstItem="qLi-um-BnT" firstAttribute="centerY" secondItem="tV4-yV-qu4" secondAttribute="centerY" multiplier="1:1.4" id="9Nk-6W-ST6"/>
+                                    <constraint firstItem="qLi-um-BnT" firstAttribute="centerY" secondItem="tV4-yV-qu4" secondAttribute="centerY" multiplier="1:1.7" id="9Nk-6W-ST6"/>
                                     <constraint firstItem="qLi-um-BnT" firstAttribute="width" secondItem="tV4-yV-qu4" secondAttribute="width" multiplier="1:1.15" id="ZGC-7R-adg"/>
                                     <constraint firstItem="qLi-um-BnT" firstAttribute="centerX" secondItem="tV4-yV-qu4" secondAttribute="centerX" id="xXE-uG-Cxv"/>
                                 </constraints>

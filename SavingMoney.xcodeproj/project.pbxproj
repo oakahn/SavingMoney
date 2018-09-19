@@ -43,6 +43,8 @@
 		9C14669C2121400D0006C3E7 /* DateFormatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */; };
 		9C1466A22121AD040006C3E7 /* Slip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1466A12121AD040006C3E7 /* Slip.storyboard */; };
 		9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1466A32121AD120006C3E7 /* SlipVC.swift */; };
+		9C1A7A7521525702001CE153 /* SlipRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A7A7421525702001CE153 /* SlipRouter.swift */; };
+		9C1A7A7721526029001CE153 /* ExtensionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A7A7621526029001CE153 /* ExtensionHistory.swift */; };
 		9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */; };
 		9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
@@ -121,6 +123,8 @@
 		9C14669B2121400D0006C3E7 /* DateFormatComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatComponent.swift; sourceTree = "<group>"; };
 		9C1466A12121AD040006C3E7 /* Slip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Slip.storyboard; sourceTree = "<group>"; };
 		9C1466A32121AD120006C3E7 /* SlipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipVC.swift; sourceTree = "<group>"; };
+		9C1A7A7421525702001CE153 /* SlipRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipRouter.swift; sourceTree = "<group>"; };
+		9C1A7A7621526029001CE153 /* ExtensionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistory.swift; sourceTree = "<group>"; };
 		9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferPresenter.swift; sourceTree = "<group>"; };
 		9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferRouter.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +306,7 @@
 		9C1466A02121ACF60006C3E7 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				9C1A7A7421525702001CE153 /* SlipRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 			children = (
 				9C5E8FF020C1538A004BFC63 /* HistoryVC.swift */,
 				9C0A5E952123C86900AA2DB9 /* GetColor.swift */,
+				9C1A7A7621526029001CE153 /* ExtensionHistory.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -711,6 +717,7 @@
 				9C5E8FFF20C1556A004BFC63 /* Font.swift in Sources */,
 				9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */,
 				9C5E8FF320C1542C004BFC63 /* BaseClass.swift in Sources */,
+				9C1A7A7721526029001CE153 /* ExtensionHistory.swift in Sources */,
 				9C0A5E962123C86900AA2DB9 /* GetColor.swift in Sources */,
 				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
 				9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */,
@@ -740,6 +747,7 @@
 				9C07BEFE2123218A00EB1995 /* HistoryModel.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
 				9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */,
+				9C1A7A7521525702001CE153 /* SlipRouter.swift in Sources */,
 				9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */,
 				9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */,
 				9C61E30520C4DEC600908D95 /* TransferRouter.swift in Sources */,

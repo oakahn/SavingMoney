@@ -45,14 +45,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
-        
-        var dataEntries: [ChartDataEntry] = []
-        
-        for i in 0..<dataPoints.count {
-            let dataEntry = ChartDataEntry(x: values[i], y: values[i])
-            dataEntries.append(dataEntry)
-        }
-        
+        let dataEntries: [ChartDataEntry] = setDataEntries(dataPoints: dataPoints, values: values)
         let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Wonders")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
@@ -60,6 +53,8 @@ class HistoryVC: BaseVC, ChartViewDelegate {
         let colors: [UIColor] = GetColor().color
         pieChartDataSet.colors = colors
     }
+    
+    
 }
 
 extension HistoryVC: HistoryVCProtocol {

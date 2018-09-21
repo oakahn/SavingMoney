@@ -22,13 +22,13 @@ class HistoryPresenter {
     
     init(_ view: HistoryVCProtocol) {
         self.view = view
-        dbReference = Database.database().reference()
+        dbReference = Database.database().reference().child("Oak")
     }
 }
 
 extension HistoryPresenter: HistoryPresenterProtocol {
     func getHistory() {
-        dbReference?.child("Oak").observeSingleEvent(of: .value, with: { (snapshot) in
+        dbReference?.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let res = snapshot.value as? NSObject else { return }
             guard let detail = Mapper<HistoryModel>().map(JSONObject: res) else { return }
             guard let payTotal = detail.payTotal,

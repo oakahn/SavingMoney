@@ -31,29 +31,23 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        setup()
         isHideTitle = true
         overrideBackButton()
         title = "History"
         setTitleColor(font: UIFont.kanitH8BoldStyle, color: UIColor.pinkTheme)
     }
     
-    func setup() {
-        
-    }
-    
     func setChart(dataPoints: [String], values: [Double]) {
-        let dataEntries: [ChartDataEntry] = setDataEntries(dataPoints: dataPoints, values: values)
-        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Wonders")
+        let dataEntries: [ChartDataEntry] = setPieDataEntries(dataPoints: dataPoints, values: values)
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: dataPoints[0])
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
+        
         pieChartView.animate(xAxisDuration: TimeInterval(2))
         
         let colors: [UIColor] = GetColor().color
         pieChartDataSet.colors = colors
     }
-    
-    
 }
 
 extension HistoryVC: HistoryVCProtocol {
@@ -69,11 +63,9 @@ extension HistoryVC: HistoryVCProtocol {
                     firebaseModel.internet,
                     firebaseModel.piggy,
                     firebaseModel.shopping,
-                    firebaseModel.water ]
+                    firebaseModel.water]
         
         guard let value = resp as? [Double] else { return }
-        print(value)
-        
         setChart(dataPoints: item, values: value)
     }
 }

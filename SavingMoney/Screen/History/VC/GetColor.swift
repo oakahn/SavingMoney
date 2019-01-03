@@ -7,5 +7,7 @@ struct GetColor {
                             UIColor.chart4,
                             UIColor.chart5,
                             UIColor.chart6,
-                            UIColor.chart7,]
+                            UIColor.chart7,
+                            UIColor.chart1,
+                            UIColor.chart2,]
 }

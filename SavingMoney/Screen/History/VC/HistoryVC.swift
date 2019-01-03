@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 protocol HistoryVCProtocol: BaseVCProtocol {
-    func getHistorySuccess(_ in: String, _ pay: String)
+    func getHistorySuccess(_ firebaseModel: FirebaseModel)
 }
 
 class HistoryVC: BaseVC, ChartViewDelegate {
@@ -21,6 +21,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLoading(message: "", hasBg: true)
         pieChartView.delegate = self
         presenter.getHistory()
     }
@@ -38,9 +39,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     }
     
     func setup() {
-        let item = ListTransfer().keyChild
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-        setChart(dataPoints: item, values: unitsSold)
+        
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -48,6 +47,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
         let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Wonders")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
+        pieChartView.animate(xAxisDuration: TimeInterval(2))
         
         let colors: [UIColor] = GetColor().color
         pieChartDataSet.colors = colors
@@ -57,7 +57,23 @@ class HistoryVC: BaseVC, ChartViewDelegate {
 }
 
 extension HistoryVC: HistoryVCProtocol {
-    func getHistorySuccess(_ in: String, _ pay: String) {
+    func getHistorySuccess(_ firebaseModel: FirebaseModel) {
+        hideLoading()
+        let item = ListTransfer().keyChild
+
+        let resp = [firebaseModel.bts,
+                    firebaseModel.center,
+                    firebaseModel.condo,
+                    firebaseModel.fire,
+                    firebaseModel.food,
+                    firebaseModel.internet,
+                    firebaseModel.piggy,
+                    firebaseModel.shopping,
+                    firebaseModel.water ]
         
+        guard let value = resp as? [Double] else { return }
+        print(value)
+        
+        setChart(dataPoints: item, values: value)
     }
 }

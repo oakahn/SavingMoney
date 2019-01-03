@@ -3,18 +3,18 @@ import ObjectMapper
 
 class HistoryModel: Mappable {
     
-    var payTotal: String?
-    var receiveTotal: String?
+    var payTotal: Double?
+    var receiveTotal: Double?
     
-    var bts: String?
-    var center: String?
-    var condo: String?
-    var fire: String?
-    var food: String?
-    var internet: String?
-    var piggy: String?
-    var shopping: String?
-    var water: String?
+    var bts: Double?
+    var center: Double?
+    var condo: Double?
+    var fire: Double?
+    var food: Double?
+    var internet: Double?
+    var piggy: Double?
+    var shopping: Double?
+    var water: Double?
     
     required init?(map: Map) {}
     

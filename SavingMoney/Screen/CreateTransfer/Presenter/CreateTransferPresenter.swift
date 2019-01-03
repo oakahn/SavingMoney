@@ -55,21 +55,20 @@ extension CreateTransferPersenter {
     
     private func updateType(createModel: CreateModel) {
         dbReference?.child(createModel.catagory).observeSingleEvent(of: .value, with: { (snapshot) in
-            guard let valueChild = snapshot.value as? String else { return }
-            guard let valueInt = Int(valueChild) else { return }
+            guard let valueChild = snapshot.value as? Int else { return }
             guard let amount = Int(createModel.amount) else { return }
-            self.dbReference?.child(createModel.catagory).setValue(String(valueInt + amount))
+            self.dbReference?.child(createModel.catagory).setValue(valueChild + amount)
+            self.submitSuccess()
         })
     }
     
     private func updateCatagory(createModel: CreateModel) {
         let type = checkType(createModel: createModel)
         dbReference?.child(type).observeSingleEvent(of: .value, with: { (snapshot) in
-            guard let valueChild = snapshot.value as? String else { return }
-            guard let valueInt = Int(valueChild) else { return }
+            guard let valueChild = snapshot.value as? Int else { return }
             guard let amount = Int(createModel.amount) else { return }
-            self.dbReference?.child(type).setValue(String(valueInt + amount))
-            self.submitSuccess()
+            self.dbReference?.child(type).setValue(valueChild + amount)
+            
         })
     }
     

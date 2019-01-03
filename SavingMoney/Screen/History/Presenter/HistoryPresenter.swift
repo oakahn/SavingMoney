@@ -42,8 +42,17 @@ extension HistoryPresenter: HistoryPresenterProtocol {
                 let piggy = detail.piggy,
                 let shopping = detail.shopping,
                 let water = detail.water else { return }
-            print(payTotal, receiveTotal)
-            self.view?.getHistorySuccess(receiveTotal, payTotal)
+            self.view?.getHistorySuccess(FirebaseModel(payTotal: payTotal,
+                                                      receiveTotal: receiveTotal,
+                                                      bts: bts,
+                                                      center: center,
+                                                      condo: condo,
+                                                      fire: fire,
+                                                      food: food,
+                                                      internet: internet,
+                                                      piggy: piggy,
+                                                      shopping: shopping,
+                                                      water: water))
         })
     }
 }

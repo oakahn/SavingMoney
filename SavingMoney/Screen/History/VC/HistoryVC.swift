@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 protocol HistoryVCProtocol: BaseVCProtocol {
-    func getHistorySuccess()
+    func getHistorySuccess(_ in: String, _ pay: String)
 }
 
 class HistoryVC: BaseVC, ChartViewDelegate {
@@ -38,10 +38,9 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     }
     
     func setup() {
-//        pieChartView.noDataText = "Superman"
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+        let item = ListTransfer().keyChild
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-        setChart(dataPoints: months, values: unitsSold)
+        setChart(dataPoints: item, values: unitsSold)
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -58,7 +57,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
 }
 
 extension HistoryVC: HistoryVCProtocol {
-    func getHistorySuccess() {
+    func getHistorySuccess(_ in: String, _ pay: String) {
         
     }
 }

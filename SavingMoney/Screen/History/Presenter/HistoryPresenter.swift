@@ -32,9 +32,18 @@ extension HistoryPresenter: HistoryPresenterProtocol {
             guard let res = snapshot.value as? NSObject else { return }
             guard let detail = Mapper<HistoryModel>().map(JSONObject: res) else { return }
             guard let payTotal = detail.payTotal,
-                let receiveTotal = detail.receiveTotal else { return }
+                let receiveTotal = detail.receiveTotal,
+                let bts = detail.bts,
+                let center = detail.center,
+                let condo = detail.condo,
+                let fire = detail.fire,
+                let food = detail.food,
+                let internet = detail.internet,
+                let piggy = detail.piggy,
+                let shopping = detail.shopping,
+                let water = detail.water else { return }
             print(payTotal, receiveTotal)
-            self.view?.getHistorySuccess()
+            self.view?.getHistorySuccess(receiveTotal, payTotal)
         })
     }
 }

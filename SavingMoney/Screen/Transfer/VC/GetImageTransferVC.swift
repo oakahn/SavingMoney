@@ -10,13 +10,15 @@ import Foundation
 import UIKit
 
 struct ListTransfer {
-    let listItem: [String] = ["foodImage",
-                              "carImage",
-                              "mobileImage",
-                              "fireImage",
-                              "waterImage",
-                              "drugImage",
-                              "internetImage"]
+    let listItem: [String] = ["bts",
+                              "center",
+                              "condo",
+                              "fire",
+                              "food",
+                              "internet",
+                              "piggy",
+                              "shopping",
+                              "water"]
     
     let valueListTransfer: [String] = ["ค่าอาหาร",
                                        "การเดินทาง",
@@ -25,13 +27,15 @@ struct ListTransfer {
                                        "ค่าน้ำ",
                                        "สุขภาพ",
                                        "ค่าอินเทอร์เน็ตหอ"]
-    let keyChild: [String] = ["food",
-                              "car",
-                              "mobile",
+    let keyChild: [String] = ["bts",
+                              "center",
+                              "condo",
                               "fire",
-                              "water",
-                              "health",
-                              "internet"]
+                              "food",
+                              "internet",
+                              "piggy",
+                              "shopping",
+                              "water"]
 }
 
 extension TransferVC {

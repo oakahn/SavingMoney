@@ -45,7 +45,7 @@ extension CreateTransferPersenter: CreateTransferPresenterProtocol {
 extension CreateTransferPersenter {
     
     private func createInsert(_ input: CreateModel) -> String {
-        return input.type + "|" + input.catagory + "|" + input.amount + "|" + input.desc
+        return input.type + "|" + input.catagory + "|" + input.amount + "|" + input.desc + "|" + input.dateKey
     }
     
     private func updateValue(_ createModel: CreateModel) {
@@ -57,7 +57,8 @@ extension CreateTransferPersenter {
         dbReference?.child(createModel.catagory).observeSingleEvent(of: .value, with: { (snapshot) in
             guard let valueChild = snapshot.value as? String else { return }
             guard let valueInt = Int(valueChild) else { return }
-            self.dbReference?.child(createModel.catagory).setValue(String(valueInt + 1))
+            guard let amount = Int(createModel.amount) else { return }
+            self.dbReference?.child(createModel.catagory).setValue(String(valueInt + amount))
         })
     }
     

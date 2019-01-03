@@ -3,16 +3,18 @@ import ObjectMapper
 
 class HistoryModel: Mappable {
     
-    var payTotal: Int?
-    var receiveTotal: Int?
+    var payTotal: String?
+    var receiveTotal: String?
     
-    var food: String?
-    var car: String?
-    var mobile: String?
+    var bts: String?
+    var center: String?
+    var condo: String?
     var fire: String?
-    var water: String?
-    var health: String?
+    var food: String?
     var internet: String?
+    var piggy: String?
+    var shopping: String?
+    var water: String?
     
     required init?(map: Map) {}
     
@@ -20,12 +22,14 @@ class HistoryModel: Mappable {
         payTotal <- map["payTotal"]
         receiveTotal <- map["receiveTotal"]
         
-        food <- map["food"]
-        car <- map["car"]
-        mobile <- map["mobile"]
+        bts <- map["bts"]
+        center <- map["center"]
+        condo <- map["condo"]
         fire <- map["fire"]
-        water <- map["water"]
-        health <- map["health"]
+        food <- map["food"]
         internet <- map["internet"]
+        piggy <- map["piggy"]
+        shopping <- map["shopping"]
+        water <- map["water"]
     }
 }

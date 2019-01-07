@@ -66,7 +66,7 @@ class CreateTransferVC: BaseVC {
                                              catagory: catagory,
                                              amount: amount,
                                              desc: note),
-                                 SetLineStruct(message: note + "" + amount,
+                                 SetLineStruct(message: note + "  " + amount + "  บาท",
                                                stickerId: "518",
                                                stickerPackageId: "2"))
     }

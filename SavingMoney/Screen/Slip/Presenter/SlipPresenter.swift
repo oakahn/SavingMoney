@@ -26,7 +26,7 @@ extension SlipPresenter: SlipPresenterProtocol {
         
         let headers: HTTPHeaders = [
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Bearer FGR9pG3vfJ8JXSEkQaTtVvxJ5sO9mUSsHCzi87NwI4N"
+            "Authorization": "Bearer ksSm9CrtDKA28ZvkMXjJsjbrAZFlO7lphvi0QBcqVBm"
         ]
         
         let parameters: Parameters = [

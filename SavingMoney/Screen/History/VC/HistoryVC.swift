@@ -39,7 +39,7 @@ class HistoryVC: BaseVC, ChartViewDelegate {
     
     func setChart(dataPoints: [String], values: [Double]) {
         let dataEntries: [ChartDataEntry] = setPieDataEntries(dataPoints: dataPoints, values: values)
-        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: dataPoints[0])
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
         pieChartView.data = pieChartData
         

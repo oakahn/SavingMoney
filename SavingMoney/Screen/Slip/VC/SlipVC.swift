@@ -1,7 +1,7 @@
 import UIKit
 
 protocol SlipVCProtocol: BaseVCProtocol {
-    
+    func goToMainPage()
 }
 
 class SlipVC: BaseVC {
@@ -12,7 +12,9 @@ class SlipVC: BaseVC {
     @IBOutlet weak var imageType: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     var models: SlipModel?
+    var lines: SetLineStruct?
     lazy var router = SlipRouter(self)
+    lazy var presenter = SlipPresenter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,9 @@ class SlipVC: BaseVC {
     }
     
     @IBAction func goTomainPage(_ sender: Any) {
-        router.redirectToMainPage()
+        presenter.notifyLine(lines ?? SetLineStruct(message: "test",
+                                                    stickerId: "1",
+                                                    stickerPackageId: "1"))
     }
     
     func setup() {
@@ -42,5 +46,7 @@ class SlipVC: BaseVC {
 }
 
 extension SlipVC: SlipVCProtocol {
-    
+    func goToMainPage() {
+        router.redirectToMainPage()
+    }
 }

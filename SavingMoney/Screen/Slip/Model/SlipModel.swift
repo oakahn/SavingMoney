@@ -17,3 +17,16 @@ struct SlipModel {
         self.image = image
     }
 }
+
+struct SetLineStruct {
+    
+    var message: String?
+    var stickerId: String?
+    var stickerPackageId: String?
+    
+    init(message: String, stickerId: String, stickerPackageId: String) {
+        self.message = message
+        self.stickerId = stickerId
+        self.stickerPackageId = stickerPackageId
+    }
+}

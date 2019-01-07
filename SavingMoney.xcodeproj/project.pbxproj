@@ -47,6 +47,7 @@
 		9C1A7A7721526029001CE153 /* ExtensionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A7A7621526029001CE153 /* ExtensionHistory.swift */; };
 		9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */; };
 		9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */; };
+		9C3059B221DF72D0008C12A3 /* SlipPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3059B121DF72D0008C12A3 /* SlipPresenter.swift */; };
 		9C5E8FCE20C13C86004BFC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */; };
 		9C5E8FD020C13C86004BFC63 /* StartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E8FCF20C13C86004BFC63 /* StartApp.swift */; };
 		9C5E8FD320C13C86004BFC63 /* StartApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5E8FD120C13C86004BFC63 /* StartApp.storyboard */; };
@@ -128,6 +129,7 @@
 		9C1A7A7621526029001CE153 /* ExtensionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHistory.swift; sourceTree = "<group>"; };
 		9C27FA8420CD2AFE000257EE /* CreateTransferPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferPresenter.swift; sourceTree = "<group>"; };
 		9C27FA8620CD2BB1000257EE /* CreateTransferRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransferRouter.swift; sourceTree = "<group>"; };
+		9C3059B121DF72D0008C12A3 /* SlipPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipPresenter.swift; sourceTree = "<group>"; };
 		9C5E8FCA20C13C86004BFC63 /* SavingMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavingMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5E8FCD20C13C86004BFC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C5E8FCF20C13C86004BFC63 /* StartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApp.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 		9C14669F2121ACF00006C3E7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9C3059B121DF72D0008C12A3 /* SlipPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				9C08F48D20C1A24F007E931B /* TransferPresenter.swift in Sources */,
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
+				9C3059B221DF72D0008C12A3 /* SlipPresenter.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */,
 				9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */,

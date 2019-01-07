@@ -9,15 +9,16 @@
 import Foundation
 
 protocol CreateTransferRouterProtocol {
-    func redirectToSlipVC(model: SlipModel)
+    func redirectToSlipVC(model: SlipModel, setLineStruct: SetLineStruct)
 }
 
 class CreateTransferRouter: BaseRouter, CreateTransferRouterProtocol {
-    func redirectToSlipVC(model: SlipModel) {
+    func redirectToSlipVC(model: SlipModel, setLineStruct: SetLineStruct) {
         guard let story = getViewController(storyboardName: self.Slip) as? SlipVC else {
             return
         }
         story.models = model
+        story.lines = setLineStruct
         redirectTo(viewController: story)
     }
 }

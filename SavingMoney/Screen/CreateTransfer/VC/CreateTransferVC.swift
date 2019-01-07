@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CreateTransferVCProtocol: BaseVCProtocol {
-    func redirectToSlipVC()
+    func redirectToSlipVC(setLineStruct: SetLineStruct)
 }
 
 class CreateTransferVC: BaseVC {
@@ -24,7 +24,7 @@ class CreateTransferVC: BaseVC {
     lazy var router = CreateTransferRouter(self)
     var submitButtonView: SubmitButtonKeyboardView?
     var type: String = ""
-    let maxInputAmount = NSNumber(value:9999.99)
+    let maxInputAmount = NSNumber(value:10000)
     var dateTimeNow: String = ""
     var catagory: String = ""
     var image: String?
@@ -60,24 +60,20 @@ class CreateTransferVC: BaseVC {
         displayLoading(message: "", hasBg: true)
         noteText.resignFirstResponder()
         amountText.resignFirstResponder()
+        guard let amount = amountText.text, let note = noteText.text else { return }
         presenter.submitTransfer(CreateModel(dateKey: dateTimeNow,
                                              type: type,
                                              catagory: catagory,
-                                             amount: amountText.text ?? "",
-                                             desc: noteText.text ?? ""))
+                                             amount: amount,
+                                             desc: note),
+                                 SetLineStruct(message: note + "" + amount,
+                                               stickerId: "518",
+                                               stickerPackageId: "2"))
     }
 }
 
 extension CreateTransferVC: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        guard let textfield = textField.text else { return false }
-//        if textfield.isEmpty { return true }
-//        if textfield == "." && textfield.isEmpty { return false }
-//        guard let amountValue = Double(textfield) else { return false }
-//        if amountValue > maxInputAmount.doubleValue {
-//            amountText.text?.removeLast()
-//            return false
-//        }
         return true
     }
 }

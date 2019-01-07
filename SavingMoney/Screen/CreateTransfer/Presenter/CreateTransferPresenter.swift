@@ -3,7 +3,7 @@ import Firebase
 import FirebaseDatabase
 
 protocol CreateTransferPresenterProtocol {
-    func submitTransfer(_ createModel: CreateModel)
+    func submitTransfer(_ createModel: CreateModel, _ setLineStruct: SetLineStruct)
     func setupModel(_ model: HistoryModel)
 }
 
@@ -24,20 +24,20 @@ extension CreateTransferPersenter: CreateTransferPresenterProtocol {
         
     }
     
-    func submitTransfer(_ createModel: CreateModel) {
+    func submitTransfer(_ createModel: CreateModel, _ setLineStruct: SetLineStruct) {
         let dateKeys = ExtensionPresenter().cutDateTime(date: createModel.dateKey)[0]
         dbReference?.child(dateKeys).observeSingleEvent(of: .value, with: { (snapshot) in
             let dic = snapshot.value as? [String]
             if (dic == nil) {
                 let data: [String] = [self.createInsert(createModel)]
                 self.dbReference?.child(dateKeys).setValue(data)
-                self.updateValue(createModel)
+                self.updateValue(createModel, setLineStruct: setLineStruct)
                 return
             }
             guard var dictionary = snapshot.value as? [String] else { return }
             dictionary.append(self.createInsert(createModel))
             self.dbReference?.child(dateKeys).setValue(dictionary)
-            self.updateValue(createModel)
+            self.updateValue(createModel, setLineStruct: setLineStruct)
         })
     }
 }
@@ -48,17 +48,17 @@ extension CreateTransferPersenter {
         return input.type + "|" + input.catagory + "|" + input.amount + "|" + input.desc + "|" + input.dateKey
     }
     
-    private func updateValue(_ createModel: CreateModel) {
+    private func updateValue(_ createModel: CreateModel, setLineStruct: SetLineStruct) {
         updateCatagory(createModel: createModel)
-        updateType(createModel: createModel)
+        updateType(createModel: createModel, setLineStruct: setLineStruct)
     }
     
-    private func updateType(createModel: CreateModel) {
+    private func updateType(createModel: CreateModel, setLineStruct: SetLineStruct) {
         dbReference?.child(createModel.catagory).observeSingleEvent(of: .value, with: { (snapshot) in
             guard let valueChild = snapshot.value as? Int else { return }
             guard let amount = Int(createModel.amount) else { return }
             self.dbReference?.child(createModel.catagory).setValue(valueChild + amount)
-            self.submitSuccess()
+            self.submitSuccess(setLineStruct: setLineStruct)
         })
     }
     
@@ -68,7 +68,6 @@ extension CreateTransferPersenter {
             guard let valueChild = snapshot.value as? Int else { return }
             guard let amount = Int(createModel.amount) else { return }
             self.dbReference?.child(type).setValue(valueChild + amount)
-            
         })
     }
     
@@ -77,7 +76,7 @@ extension CreateTransferPersenter {
         return "payTotal"
     }
     
-    private func submitSuccess() {
-        view?.redirectToSlipVC()
+    private func submitSuccess(setLineStruct: SetLineStruct) {
+        view?.redirectToSlipVC(setLineStruct: setLineStruct)
     }
 }

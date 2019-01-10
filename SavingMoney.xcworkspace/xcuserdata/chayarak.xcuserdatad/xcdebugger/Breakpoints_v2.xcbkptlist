@@ -9,8 +9,88 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "SavingMoney/Screen/Statment/Presenter/StatmentPresenter.swift"
+            timestampString = "568810736.623456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "getResponseForChild()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SavingMoney/Screen/Statment/Presenter/StatmentPresenter.swift"
+            timestampString = "568810736.623522"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getResponseForChild()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SavingMoney/Screen/Statment/Presenter/StatmentPresenter.swift"
+            timestampString = "568810736.62357"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getResponseForChild()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SavingMoney.StatmentPresenter.(getResponseForChild in _BDA060B928580B5E98B6B5911FBE85FF)() -&gt; ()"
+                  moduleName = "SavingMoney"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chayarak/Documents/StudyByP_Peach/SavingMoney/SavingMoney/Screen/Statment/Presenter/StatmentPresenter.swift"
+                  timestampString = "568810736.765157"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in SavingMoney.StatmentPresenter.(getResponseForChild in _BDA060B928580B5E98B6B5911FBE85FF)() -&gt; ()"
+                  moduleName = "SavingMoney"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chayarak/Documents/StudyByP_Peach/SavingMoney/SavingMoney/Screen/Statment/Presenter/StatmentPresenter.swift"
+                  timestampString = "568810736.767596"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
             filePath = "SavingMoney/Screen/Statment/VC/StatmentVC.swift"
-            timestampString = "568810026.8882231"
+            timestampString = "568810736.623702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"

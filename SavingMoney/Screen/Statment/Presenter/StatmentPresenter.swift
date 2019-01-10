@@ -19,6 +19,7 @@ class StatmentPresenter {
     
     var view: StatmentVCProtocol?
     var dbReference: DatabaseReference?
+    var listItem: [String] = []
     
     init(_ view: StatmentVCProtocol) {
         self.view = view
@@ -62,14 +63,13 @@ extension StatmentPresenter: StatmemtPresenterProtocol {
     }
     
     private func getResponseForChild() {
-        var listItem: [String] = []
         dbReference?.observeSingleEvent(of: .value, with: { (snap) in
             guard let value = snap.value as? [String] else { return }
             for i in value {
-                listItem.append(i)
+                self.listItem.append(i)
             }
+            self.view?.responseSuccess(listItem: self.listItem)
         })
-        view?.responseSuccess(listItem: listItem)
     }
     
     private func setChildCallback(child: String, completion: (_ result: ())->()) {

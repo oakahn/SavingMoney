@@ -77,12 +77,16 @@
 		9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */; };
 		9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */; };
 		9C8E595321DDCDAE006B9AEA /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E595221DDCDAE006B9AEA /* FirebaseModel.swift */; };
+		9CA42ABE21E5B35700576347 /* Statment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA42ABD21E5B35700576347 /* Statment.storyboard */; };
+		9CA42AC121E5B37100576347 /* StatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA42AC021E5B37100576347 /* StatmentVC.swift */; };
+		9CA42AC421E5B50000576347 /* StatmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA42AC321E5B50000576347 /* StatmentPresenter.swift */; };
 		9CAC2F8821523859006B4E57 /* SlipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC2F8721523859006B4E57 /* SlipModel.swift */; };
 		9CC86A8D211EF5C1000B2356 /* CornerUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */; };
 		9CC86A8F211F2F15000B2356 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A8E211F2F15000B2356 /* Color.swift */; };
 		9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A9021204C12000B2356 /* SubmitButtonView.swift */; };
 		9CC86A9321204C1A000B2356 /* SubmitButtonKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */; };
 		9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */; };
+		9CCEEF6C21E72B310022B004 /* StatmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEEF6B21E72B310022B004 /* StatmentModel.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -161,12 +165,16 @@
 		9C61E31C20C555FD00908D95 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C61E31E20C5566800908D95 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		9C8E595221DDCDAE006B9AEA /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		9CA42ABD21E5B35700576347 /* Statment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statment.storyboard; sourceTree = "<group>"; };
+		9CA42AC021E5B37100576347 /* StatmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatmentVC.swift; sourceTree = "<group>"; };
+		9CA42AC321E5B50000576347 /* StatmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatmentPresenter.swift; sourceTree = "<group>"; };
 		9CAC2F8721523859006B4E57 /* SlipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipModel.swift; sourceTree = "<group>"; };
 		9CC86A8C211EF5C1000B2356 /* CornerUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerUiView.swift; sourceTree = "<group>"; };
 		9CC86A8E211F2F15000B2356 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9CC86A9021204C12000B2356 /* SubmitButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitButtonView.swift; sourceTree = "<group>"; };
 		9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitButtonKeyboardView.xib; sourceTree = "<group>"; };
 		9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCreateTransfer.swift; sourceTree = "<group>"; };
+		9CCEEF6B21E72B310022B004 /* StatmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatmentModel.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -365,6 +373,7 @@
 		9C5E8FE620C151CD004BFC63 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9CA42ABC21E5B34300576347 /* Statment */,
 				9C14669D2121ACD80006C3E7 /* Slip */,
 				9C61E31720C5529A00908D95 /* SplashScreen */,
 				9C61E30F20C5221C00908D95 /* CreateTransfer */,
@@ -525,10 +534,45 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
+		9CA42ABC21E5B34300576347 /* Statment */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEEF6A21E72B1B0022B004 /* Model */,
+				9CA42AC221E5B4EC00576347 /* Presenter */,
+				9CA42ABF21E5B36000576347 /* VC */,
+				9CA42ABD21E5B35700576347 /* Statment.storyboard */,
+			);
+			path = Statment;
+			sourceTree = "<group>";
+		};
+		9CA42ABF21E5B36000576347 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9CA42AC021E5B37100576347 /* StatmentVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9CA42AC221E5B4EC00576347 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9CA42AC321E5B50000576347 /* StatmentPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9CAC2F862152384A006B4E57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9CAC2F8721523859006B4E57 /* SlipModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CCEEF6A21E72B1B0022B004 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CCEEF6B21E72B310022B004 /* StatmentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -605,6 +649,7 @@
 				9C1466A22121AD040006C3E7 /* Slip.storyboard in Resources */,
 				9C0EFD4C20C599DC00C556D7 /* Kanit-ExtraLight.ttf in Resources */,
 				9C5E8FD820C13C86004BFC63 /* LaunchScreen.storyboard in Resources */,
+				9CA42ABE21E5B35700576347 /* Statment.storyboard in Resources */,
 				9C61E31D20C555FD00908D95 /* SplashScreen.storyboard in Resources */,
 				9C0EFD4E20C599DC00C556D7 /* Kanit-BoldItalic.ttf in Resources */,
 				9C0EFD5320C599DC00C556D7 /* Kanit-MediumItalic.ttf in Resources */,
@@ -733,10 +778,12 @@
 				9C5E8FFD20C1553B004BFC63 /* UiApplication.swift in Sources */,
 				9C04BDB820C1756B00071802 /* StartAppPresenter.swift in Sources */,
 				9C27FA8520CD2AFE000257EE /* CreateTransferPresenter.swift in Sources */,
+				9CA42AC121E5B37100576347 /* StatmentVC.swift in Sources */,
 				9C61E31B20C5532F00908D95 /* SplashScreen.swift in Sources */,
 				9C04BDBE20C177D500071802 /* BaseRouter.swift in Sources */,
 				9C08F48B20C1A1FB007E931B /* TransferVC.swift in Sources */,
 				9C12D4BF2122BA5D00F91CB5 /* InsertModel.swift in Sources */,
+				9CCEEF6C21E72B310022B004 /* StatmentModel.swift in Sources */,
 				9C61E31420C5224900908D95 /* CreateTransferVC.swift in Sources */,
 				9C0F39AE21266CB9009C1CBD /* CreateModel.swift in Sources */,
 				9C07BEF921231F1F00EB1995 /* ExtensionPresenter.swift in Sources */,
@@ -744,6 +791,7 @@
 				9C61E31F20C5566800908D95 /* SplashScreenPresenter.swift in Sources */,
 				9C5E8FF120C1538A004BFC63 /* HistoryVC.swift in Sources */,
 				9C3059B221DF72D0008C12A3 /* SlipPresenter.swift in Sources */,
+				9CA42AC421E5B50000576347 /* StatmentPresenter.swift in Sources */,
 				9C5E8FE020C148B7004BFC63 /* CornerView.swift in Sources */,
 				9CC86A9121204C12000B2356 /* SubmitButtonView.swift in Sources */,
 				9C1466A42121AD120006C3E7 /* SlipVC.swift in Sources */,

@@ -16,13 +16,15 @@ class BaseRouter {
     let history = "History"
     let createTransfer = "CreateTransfer"
     let Slip = "Slip"
+    let statment = "Statment"
     
     let routes: [String: String] = [
         "StartApp": "StartAppVC",
         "Transfer": "TransferVC",
         "History": "HistoryVC",
         "CreateTransfer": "CreateTransferVC",
-        "Slip": "SlipVC"
+        "Slip": "SlipVC",
+        "Statment": "StatmentVC"
     ]
     
     internal weak var viewController: UIViewController?

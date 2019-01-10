@@ -30,6 +30,10 @@ class HistoryVC: BaseVC, ChartViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func goToStatment(_ sender: Any) {
+        router.goToStatment()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         isHideTitle = true
         overrideBackButton()

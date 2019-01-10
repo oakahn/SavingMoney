@@ -10,9 +10,14 @@ import Foundation
 import UIKit
 
 protocol HistoryRouterProtocol {
-    
+    func goToStatment()
 }
 
 class HistoryRouter: BaseRouter, HistoryRouterProtocol {
-    
+    func goToStatment() {
+        guard let story = getViewController(storyboardName: self.statment) as? StatmentVC else {
+            return
+        }
+        redirectTo(viewController: story)
+    }
 }

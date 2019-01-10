@@ -10,7 +10,6 @@ import Foundation
 import ObjectMapper
 import Firebase
 import FirebaseDatabase
-import ObjectMapper
 
 protocol HistoryPresenterProtocol {
     func getHistory()

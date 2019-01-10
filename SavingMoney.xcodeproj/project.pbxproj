@@ -87,6 +87,8 @@
 		9CC86A9321204C1A000B2356 /* SubmitButtonKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */; };
 		9CC86A9521204F73000B2356 /* ExtensionCreateTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */; };
 		9CCEEF6C21E72B310022B004 /* StatmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEEF6B21E72B310022B004 /* StatmentModel.swift */; };
+		9CCEEF6E21E748050022B004 /* ExtensionStatmentpresneter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEEF6D21E748050022B004 /* ExtensionStatmentpresneter.swift */; };
+		9CCEEF7021E74FB00022B004 /* StatmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCEEF6F21E74FB00022B004 /* StatmentTableViewCell.swift */; };
 		CE08BC3892B56ACE043D9EBC /* Pods_SavingMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +177,8 @@
 		9CC86A9221204C1A000B2356 /* SubmitButtonKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitButtonKeyboardView.xib; sourceTree = "<group>"; };
 		9CC86A9421204F73000B2356 /* ExtensionCreateTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCreateTransfer.swift; sourceTree = "<group>"; };
 		9CCEEF6B21E72B310022B004 /* StatmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatmentModel.swift; sourceTree = "<group>"; };
+		9CCEEF6D21E748050022B004 /* ExtensionStatmentpresneter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStatmentpresneter.swift; sourceTree = "<group>"; };
+		9CCEEF6F21E74FB00022B004 /* StatmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatmentTableViewCell.swift; sourceTree = "<group>"; };
 		F65724595505FE7CFE304B85 /* Pods_SavingMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavingMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -549,6 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA42AC021E5B37100576347 /* StatmentVC.swift */,
+				9CCEEF6F21E74FB00022B004 /* StatmentTableViewCell.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA42AC321E5B50000576347 /* StatmentPresenter.swift */,
+				9CCEEF6D21E748050022B004 /* ExtensionStatmentpresneter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -804,8 +810,10 @@
 				9C5E900120C1558B004BFC63 /* VC.swift in Sources */,
 				9C5E8FF820C154C1004BFC63 /* BaseXibView.swift in Sources */,
 				9C14669C2121400D0006C3E7 /* DateFormatComponent.swift in Sources */,
+				9CCEEF7021E74FB00022B004 /* StatmentTableViewCell.swift in Sources */,
 				9C07BEFE2123218A00EB1995 /* HistoryModel.swift in Sources */,
 				9C5E8FE420C14ED8004BFC63 /* CornerButton.swift in Sources */,
+				9CCEEF6E21E748050022B004 /* ExtensionStatmentpresneter.swift in Sources */,
 				9C61E30E20C4E6F000908D95 /* GetImageTransferVC.swift in Sources */,
 				9C1A7A7521525702001CE153 /* SlipRouter.swift in Sources */,
 				9C27FA8720CD2BB1000257EE /* CreateTransferRouter.swift in Sources */,

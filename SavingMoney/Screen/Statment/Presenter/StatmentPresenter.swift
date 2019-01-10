@@ -37,11 +37,23 @@ extension StatmentPresenter: StatmemtPresenterProtocol {
                 let key = snap.key
                 keyList.append(key)
             }
-            self.getStatment(keyList: keyList)
+            self.getStatment(
+                keyList: keyList.filter({ (item) -> Bool in
+                    return self.clearUnuseKey(item)
+                })
+            )
         })
     }
     
+    private func clearUnuseKey(_ item: String) -> Bool {
+        for i in ListTransfer().unUseKey {
+            if item == i { return false }
+        }
+        return true
+    }
+    
     private func getStatment(keyList: [String]) {
+        print(keyList)
         for child in keyList {
             setChildCallback(child: child) { () in
                 getResponseForChild()
@@ -50,16 +62,14 @@ extension StatmentPresenter: StatmemtPresenterProtocol {
     }
     
     private func getResponseForChild() {
-        //        var listItem: [String] = []
-        print(dbReference)
+        var listItem: [String] = []
         dbReference?.observeSingleEvent(of: .value, with: { (snap) in
-            guard let value = snap.value else {
-                return
+            guard let value = snap.value as? [String] else { return }
+            for i in value {
+                listItem.append(i)
             }
-            
-            print(value)
-            
         })
+        view?.responseSuccess(listItem: listItem)
     }
     
     private func setChildCallback(child: String, completion: (_ result: ())->()) {

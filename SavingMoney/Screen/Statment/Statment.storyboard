@@ -17,10 +17,50 @@
                     <view key="view" contentMode="scaleToFill" id="RrJ-ET-KKK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-Dh-gVj">
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="63" id="n1r-K8-gm0" customClass="StatmentTableViewCell" customModule="SavingMoney" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n1r-K8-gm0" id="LsA-9n-eIm">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="62.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boq-Gm-lFi">
+                                                    <rect key="frame" x="156.5" y="21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="boq-Gm-lFi" firstAttribute="centerX" secondItem="LsA-9n-eIm" secondAttribute="centerX" id="0Hq-c8-mNh"/>
+                                                <constraint firstItem="boq-Gm-lFi" firstAttribute="centerY" secondItem="LsA-9n-eIm" secondAttribute="centerY" id="5TB-C0-1zR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="statmentLabel" destination="boq-Gm-lFi" id="Fcr-ft-Mlu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8oO-CY-Jn5" firstAttribute="bottom" secondItem="zAl-Dh-gVj" secondAttribute="bottom" constant="10" id="3V3-nG-3TE"/>
+                            <constraint firstItem="zAl-Dh-gVj" firstAttribute="top" secondItem="8oO-CY-Jn5" secondAttribute="top" constant="10" id="Epo-eN-4Nn"/>
+                            <constraint firstItem="zAl-Dh-gVj" firstAttribute="leading" secondItem="8oO-CY-Jn5" secondAttribute="leading" constant="10" id="mWD-5t-G2p"/>
+                            <constraint firstItem="8oO-CY-Jn5" firstAttribute="trailing" secondItem="zAl-Dh-gVj" secondAttribute="trailing" constant="10" id="tNZ-5F-a1x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8oO-CY-Jn5"/>
                     </view>
                     <navigationItem key="navigationItem" id="xNw-J3-yah"/>
+                    <connections>
+                        <outlet property="statmentListTableView" destination="zAl-Dh-gVj" id="nMU-qt-Art"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSf-u9-RI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

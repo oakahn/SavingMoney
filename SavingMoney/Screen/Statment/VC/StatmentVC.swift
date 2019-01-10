@@ -9,15 +9,18 @@
 import UIKit
 
 protocol StatmentVCProtocol: BaseVCProtocol {
-    func responseSuccess()
+    func responseSuccess(listItem: [String])
 }
 
 class StatmentVC: BaseVC {
     
+    @IBOutlet weak var statmentListTableView: UITableView!
     lazy var presenter = StatmentPresenter(self)
+    var listItem: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,10 +32,30 @@ class StatmentVC: BaseVC {
         presenter.getListStatment()
     }
     
+    func setup() {
+        statmentListTableView.delegate = self
+        statmentListTableView.dataSource = self
+    }
+    
+}
+
+extension StatmentVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listItem.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let table = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? StatmentTableViewCell else {
+            return UITableViewCell()
+        }
+        table.statmentLabel.text = listItem[indexPath.row]
+        return table
+    }
 }
 
 extension StatmentVC: StatmentVCProtocol {
-    func responseSuccess() {
-        
+    func responseSuccess(listItem: [String]) {
+        self.listItem = listItem
+        statmentListTableView.reloadData()
     }
 }

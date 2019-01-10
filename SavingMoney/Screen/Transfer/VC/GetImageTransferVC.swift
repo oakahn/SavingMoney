@@ -27,13 +27,25 @@ struct ListTransfer {
                                        "ค่าน้ำ",
                                        "สุขภาพ",
                                        "ค่าอินเทอร์เน็ตหอ"]
-    let keyChild: [String] = ["bts",
+    var keyChild: [String] = ["bts",
                               "center",
                               "condo",
                               "fire",
                               "food",
                               "internet",
                               "piggy",
+                              "shopping",
+                              "water"]
+    
+    let unUseKey: [String] = ["bts",
+                              "center",
+                              "condo",
+                              "fire",
+                              "food",
+                              "internet",
+                              "payTotal",
+                              "piggy",
+                              "receiveTotal",
                               "shopping",
                               "water"]
 }

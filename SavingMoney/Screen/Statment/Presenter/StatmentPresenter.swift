@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 import FirebaseDatabase
+import ObjectMapper
 
 protocol StatmemtPresenterProtocol {
     func getListStatment()
@@ -27,24 +28,42 @@ class StatmentPresenter {
 }
 
 extension StatmentPresenter: StatmemtPresenterProtocol {
+    
     func getListStatment() {
-        dbReference?.observeSingleEvent(of: .value, with: { snap in
-            print(snap.children)
-            print(snap.children.allObjects)
-            
-            guard let value = snap.children.allObjects as? [NSObject] else {
-                return
+        dbReference?.observeSingleEvent(of: .value, with: { snapshot in
+            var keyList: [String] = []
+            for child in snapshot.children {
+                guard let snap = child as? DataSnapshot else { return }
+                let key = snap.key
+                keyList.append(key)
             }
-            
-            print(value[1])
-            
-            guard let valueChild = value[1] as? NSObject else {
-                return
-            }
+            self.getStatment(keyList: keyList)
         })
     }
     
-    private func setChild(child: String) {
-        dbReference?.child(child)
+    private func getStatment(keyList: [String]) {
+        for child in keyList {
+            setChildCallback(child: child) { () in
+                getResponseForChild()
+            }
+        }
+    }
+    
+    private func getResponseForChild() {
+        //        var listItem: [String] = []
+        print(dbReference)
+        dbReference?.observeSingleEvent(of: .value, with: { (snap) in
+            guard let value = snap.value else {
+                return
+            }
+            
+            print(value)
+            
+        })
+    }
+    
+    private func setChildCallback(child: String, completion: (_ result: ())->()) {
+        dbReference = Database.database().reference().child("Oak").child(child)
+        completion(())
     }
 }

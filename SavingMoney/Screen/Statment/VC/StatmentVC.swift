@@ -9,7 +9,7 @@
 import UIKit
 
 protocol StatmentVCProtocol: BaseVCProtocol {
-    
+    func responseSuccess()
 }
 
 class StatmentVC: BaseVC {
@@ -32,5 +32,7 @@ class StatmentVC: BaseVC {
 }
 
 extension StatmentVC: StatmentVCProtocol {
-    
+    func responseSuccess() {
+        
+    }
 }

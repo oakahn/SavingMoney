@@ -14,7 +14,7 @@ protocol SplashScreenVCProtocol: BaseVCProtocol {
 class SplashScreenVC: BaseVC {
     
     var timer = Timer()
-    var second = 2
+    var second = 1
     lazy var router = SplashScreenRouter(self)
     
     override func viewDidLoad() {

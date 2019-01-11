@@ -25,7 +25,6 @@ class StatmentVC: BaseVC {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-//        presenter.getListStatment()
     }
     
     override func viewWillAppear(_ animated: Bool) {
